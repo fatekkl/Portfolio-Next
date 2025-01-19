@@ -19,6 +19,7 @@ export default {
       },
       fontFamily: {
         poppins:  ['var(--font-poppins)', 'sans-serif'],
+        quantico: ["var(--font-quantico)", "sans-serif"]
       }
     },
   },
