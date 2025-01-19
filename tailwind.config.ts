@@ -17,6 +17,9 @@ export default {
         violet: "#6A66A3",
         khaki: "#C7AC92"
       },
+      fontFamily: {
+        poppins:  ['var(--font-poppins)', 'sans-serif'],
+      }
     },
   },
   plugins: [],
