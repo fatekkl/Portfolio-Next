@@ -11,6 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        jet: "#343330",
+        jordy: "#9AC4F8",
+        tea: "#C7FFDA",
+        violet: "#6A66A3",
+        khaki: "#C7AC92"
       },
     },
   },
