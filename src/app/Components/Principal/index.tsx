@@ -91,10 +91,7 @@ export default function Principal() {
           <DotSquare />
         </div>
         <div className="hidden md:block absolute top-3/4 mr-32 right-1/4">
-          <DotSquare/>
-        </div>
-        <div className="absolute ml-[38.5rem]">
-          <Line/>
+          <DotSquare />
         </div>
 
         {/* Posiciona o Menu no canto superior direito */}
@@ -106,9 +103,7 @@ export default function Principal() {
         <span className="text-jet font-quantico font-bold -rotate-90 bottom-1/2 ml-[32rem] flex flex-col">
           mathtml.1105@gmail.com
         </span>
-
       </section>
-
     </div>
   );
 }
