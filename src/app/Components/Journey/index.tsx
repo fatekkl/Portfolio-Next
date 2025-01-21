@@ -1,6 +1,24 @@
+import DotSquare from "../DotSquare";
+import Stair from "../Stair";
+
 export default function Journey() {
     return (
         <section className="flex flex-col md:flex-row min-h-screen relative bg-jet">
+
+            {/* Elementos decorativos que podem ficar ocultos em telas muito pequenas */}
+            <div className="hidden md:block absolute left-2/4  top-[6rem]">
+                <DotSquare />
+            </div>
+            <div className="hidden md:block absolute left-[45rem] opacity-30 top-[32rem]">
+                <DotSquare />
+            </div>
+            <div className="hidden md:block absolute left-[25rem] top-[50rem]  opacity-30">
+                <DotSquare />
+            </div>
+            <div className="hidden md:block absolute left-[55rem] top-[48rem]">
+                <DotSquare />
+            </div>
+
             <div className="ml-12 mt-16 w-1/2 flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
                     <h1 className="text-tea text-5xl font-bold text-start">Minha jornada</h1>
