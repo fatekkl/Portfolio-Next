@@ -1,6 +1,7 @@
 import DotSquare from "../DotSquare";
 import Line from "../Line";
 import Stair from "../Stair";
+import Menu from "../Menu";
 
 export default function Principal() {
   return (
@@ -90,14 +91,24 @@ export default function Principal() {
           <DotSquare />
         </div>
         <div className="hidden md:block absolute top-3/4 mr-32 right-1/4">
-          <DotSquare />
+          <DotSquare/>
+        </div>
+        <div className="absolute ml-[38.5rem]">
+          <Line/>
+        </div>
+
+        {/* Posiciona o Menu no canto superior direito */}
+        <div className="absolute top-8 right-4 flex flex-col [transform:scaleX(-1)]">
+          <Menu />
         </div>
 
         {/* E-mail rotacionado */}
-        <span className="hidden md:block text-jet font-quantico font-bold -rotate-90 absolute bottom-1/2 ml-[36rem] whitespace-nowrap">
+        <span className="text-jet font-quantico font-bold -rotate-90 bottom-1/2 ml-[32rem] flex flex-col">
           mathtml.1105@gmail.com
         </span>
+
       </section>
+
     </div>
   );
 }
