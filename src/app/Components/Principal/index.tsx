@@ -82,27 +82,31 @@ export default function Principal() {
       />
 
       {/* Seção Jordy */}
-      <section className="w-full md:w-1/3 h-[50vh] md:h-screen bg-jordy relative flex items-center justify-center md:justify-start">
+      <section className="bg-jordy w-1/3 flex flex-col h-screen justify-between">
         {/* Elementos decorativos (ocultos em telas pequenas) */}
-        <div className="hidden md:block absolute bottom-3/4 left-1/4">
+        <div className="absolute bottom-3/4 ml-14 right-1/4">
           <DotSquare />
         </div>
-        <div className="hidden md:block absolute bottom-2/4 left-2/4">
+        <div className="absolute bottom-2/4 ml-36 left-3/4">
           <DotSquare />
         </div>
-        <div className="hidden md:block absolute top-3/4 mr-32 right-1/4">
+        <div className="absolute top-3/4 ml-26 right-1/4">
           <DotSquare />
         </div>
 
         {/* Posiciona o Menu no canto superior direito */}
-        <div className="absolute top-8 right-4 flex flex-col [transform:scaleX(-1)]">
-          <Menu />
+        <div className="w-full flex justify-end mt-10">
+          <Menu/>
         </div>
 
         {/* E-mail rotacionado */}
-        <span className="text-jet font-quantico font-bold -rotate-90 bottom-1/2 ml-[32rem] flex flex-col">
+        <div className="text-jet font-quantico font-bold absolute top-1/2 -rotate-90 -right-20">
           mathtml.1105@gmail.com
-        </span>
+        </div>
+
+        <div className="flex w-full justify-end">
+          <Line/>
+        </div>
       </section>
     </div>
   );
