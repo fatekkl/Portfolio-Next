@@ -42,7 +42,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [x] **Adicionar menu na tela inicial**
 - [x] **Fixar flexbox para facilitar responsividade futura**
 - [ ] Revisar ultimo texto da journey page
-- [ ] Criar sistema para criar classes para os SVGS diretamente no TSX
-- [ ] Adicionar menu na journey page
+- [x] Criar sistema para receber cores nos SVGS diretamente no TSX
+- [x] Adicionar menu na journey page
 
 
