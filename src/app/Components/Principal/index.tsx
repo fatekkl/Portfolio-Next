@@ -96,7 +96,7 @@ export default function Principal() {
 
         {/* Posiciona o Menu no canto superior direito */}
         <div className="w-full flex justify-end mt-10">
-          <Menu/>
+          <Menu color="#343330"/>
         </div>
 
         {/* E-mail rotacionado */}

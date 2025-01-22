@@ -24,8 +24,6 @@ export default function Journey() {
                     <DotSquare />
                 </div>
 
-
-
                 <div className="ml-12 mt-16 w-1/2 flex flex-col gap-4">
                     <div className="flex flex-col gap-2">
                         <h1 className="text-tea text-5xl font-bold text-start">Minha jornada</h1>
@@ -42,6 +40,9 @@ export default function Journey() {
                 </div>
                 <img src="../../../assets/Storyset.svg" className="mr-16">
                 </img>
+                <div className="absolute w-full flex justify-end mt-10">
+                    <Menu color="#C7FFDA" />
+                </div>
             </section>
         </>
     );
