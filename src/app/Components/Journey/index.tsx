@@ -40,9 +40,9 @@ export default function Journey() {
                 </div>
                 <img src="../../../assets/Storyset.svg" className="mr-16">
                 </img>
-                <div className="absolute w-full flex justify-end mt-10">
+                {/* <div className="absolute w-full flex justify-end mt-10">
                     <Menu color="#9AC4F8" />
-                </div>
+                </div> */}
             </section>
         </>
     );

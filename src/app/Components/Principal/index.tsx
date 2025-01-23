@@ -94,11 +94,6 @@ export default function Principal() {
           <DotSquare />
         </div>
 
-        {/* Posiciona o Menu no canto superior direito */}
-        <div className="w-full flex justify-end mt-10">
-          <Menu color="#343330"/>
-        </div>
-
         {/* E-mail rotacionado */}
         <div className="text-jet font-quantico font-bold absolute top-1/2 -rotate-90 -right-20">
           mathtml.1105@gmail.com
