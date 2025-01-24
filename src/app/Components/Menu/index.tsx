@@ -34,7 +34,7 @@ export default function Menu() {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                 >
-                    <path className="transition-all duration-1000 ease-linear" d="M0 2H70" stroke={color} strokeWidth="4" />
+                    <path className="transition-all duration-500 ease-linear" d="M0 2H70" stroke={color} strokeWidth="4" />
                 </svg>
                 <svg
                     width="50"
@@ -43,7 +43,7 @@ export default function Menu() {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                 >
-                    <path className="transition-all duration-1000 ease-linear" d="M0 2H50" stroke={color} strokeWidth="4" />
+                    <path className="transition-all duration-500 ease-linear" d="M0 2H50" stroke={color} strokeWidth="4" />
                 </svg>
             </div>
         </div>
