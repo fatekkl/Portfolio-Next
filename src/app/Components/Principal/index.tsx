@@ -82,7 +82,7 @@ export default function Principal() {
       />
 
       {/* Seção Jordy */}
-      <section className="bg-jordy w-1/3 flex flex-col h-screen justify-between">
+      <section className="bg-jordy w-1/3 flex flex-col h-screen justify-end">
         {/* Elementos decorativos (ocultos em telas pequenas) */}
         <div className="absolute bottom-3/4 ml-14 right-1/4">
           <DotSquare />
@@ -94,14 +94,15 @@ export default function Principal() {
           <DotSquare />
         </div>
 
-        {/* E-mail rotacionado */}
-        <div className="text-jet font-quantico font-bold absolute top-1/2 -rotate-90 -right-20">
-          mathtml.1105@gmail.com
-        </div>
+        
 
         <div className="flex w-full justify-end">
           <Line/>
         </div>
+        <div className="text-jet font-quantico font-bold absolute top-1/2 -rotate-90 -right-20">
+          mathtml.1105@gmail.com
+        </div>
+       
       </section>
     </div>
   );
