@@ -22,7 +22,7 @@ export default function Menu() {
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []); // Adicionado array de dependências vazio
+    }, []);
 
     return (
         <div className="w-full flex justify-end mt-10 absolute z-50">
