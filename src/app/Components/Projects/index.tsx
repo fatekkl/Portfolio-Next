@@ -1,4 +1,6 @@
-import Line2 from "../Line2/Line2";
+import Line2 from "../Line2";
+import MiniSquare from "../MiniSquare";
+import ProjectDescription from "../ProjectDescription";
 import UniqueProject from "../UniqueProject";
 
 export default function Projects() {
@@ -9,13 +11,31 @@ export default function Projects() {
                     <h1 className="text-3xl font-bold text-jordy">Projetos que trabalhei</h1>
                     <Line2/>
                 </div>
-                <div className="w-[45rem] h-[50rem]">
+                <div className="w-[50rem] h-[50rem] flex justify-between">
                     <div className="h-full w-60 overflow-auto flex flex-col">
-                        <UniqueProject projectTitle="Resend" selected={false} />
-                        <UniqueProject projectTitle="Ozon Solution" selected={true}/>
+                        <UniqueProject projectTitle="Resend" selected={true} />
+                        <UniqueProject projectTitle="Ozon Solution" selected={false}/>
                         <UniqueProject projectTitle="Bling" selected={false}/>
                         <UniqueProject projectTitle="Aideia" selected={false}/>
                         <UniqueProject projectTitle="JumpVerso" selected={false}/>
+                    </div>
+                    <div className="w-[30rem] h-full flex flex-col gap-10">
+                        <div>
+                            <div className="flex justify-start gap-4">
+                            <h1 className="text-tea text-2xl font-bold">Desenvolvedor Fullstack</h1>
+                            <img src="../assets/Line3.svg"/>
+                            <span className="text-tea text-2xl font-bold">Resend</span>
+                            </div>
+                            <p className="font-light text-jordy">Junho de 2024</p>
+                        </div>
+                        <div className="flex flex-col gap-6 h-full">
+                            <ProjectDescription description="Configuração e hospedagem de Servidor Linux(Ubuntu)"/>
+                            <ProjectDescription description="Schedule para envio automático de emails na data e horario selecionados"/>
+                            <ProjectDescription description="Criação de API  com rotas para envio e CRUD com o serviço de e-mails"/>
+                            <ProjectDescription description="Rota para validação e criação de domínio para cada usuário"/>
+                            <ProjectDescription description="Hospedagem de servidor web utilizando Apache"/>
+                        </div>
+
                     </div>
 
                 </div>
