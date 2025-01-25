@@ -48,5 +48,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [ ] Adicionar conteudo e outra seção na parte de projetos
 - [ ] Adicionar backgrounds para seção de projetos
 - [ ] Tornar todo o TSX com HTML semântico
+- [ ] Remover interface hardcoded
 
 
