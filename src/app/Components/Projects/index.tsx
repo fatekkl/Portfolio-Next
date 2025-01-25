@@ -19,7 +19,7 @@ export default function Projects() {
                         <UniqueProject projectTitle="Aideia" selected={false}/>
                         <UniqueProject projectTitle="JumpVerso" selected={false}/>
                     </div>
-                    <div className="w-[30rem] h-full flex flex-col gap-10">
+                    <div className="w-[30rem] h-full flex flex-col gap-4">
                         <div>
                             <div className="flex justify-start gap-4">
                             <h1 className="text-tea text-2xl font-bold">Desenvolvedor Fullstack</h1>
@@ -35,7 +35,13 @@ export default function Projects() {
                             <ProjectDescription description="Rota para validação e criação de domínio para cada usuário"/>
                             <ProjectDescription description="Hospedagem de servidor web utilizando Apache"/>
                         </div>
-
+                        <div className="flex gap-2">
+                            <img src="../assets/php_tech.png"/>
+                            <img src="../assets/linux_tech.png"/>
+                            <img src="../assets/api_tech.png"/>
+                            <img src="../assets/cloud_tech.png"/>
+                        </div>
+                        
                     </div>
 
                 </div>
