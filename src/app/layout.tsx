@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${quantico.variable} font-poppins antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${quantico.variable} font-poppins antialiased select-none`}
       >
         {children}
       </body>
