@@ -44,6 +44,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [ ] Revisar ultimo texto da journey page
 - [x] Criar sistema para receber cores nos SVGS diretamente no TSX
 - [x] Adicionar menu na journey page
+- [ ] Rever espaçamento dos textos na journey page
 - [ ] Adicionar interatividade de click para seleção de projetos
 - [ ] Adicionar conteudo e outra seção na parte de projetos
 - [ ] Adicionar backgrounds para seção de projetos
