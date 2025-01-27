@@ -1,3 +1,4 @@
+import Contact from "./Components/Contact";
 import Journey from "./Components/Journey";
 import Menu from "./Components/Menu";
 import Principal from "./Components/Principal";
@@ -10,6 +11,7 @@ export default function Home() {
       <Principal />
       <Journey />
       <Projects />
+      <Contact />
     </>
   );
 }

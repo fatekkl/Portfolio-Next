@@ -20,7 +20,10 @@ export default {
       fontFamily: {
         poppins:  ['var(--font-poppins)', 'sans-serif'],
         quantico: ["var(--font-quantico)", "sans-serif"]
-      }
+      },
+      dropShadow: {
+        'custom-eb': '0px 0px 20px #EBEBEB', // Define uma sombra com a cor EBEBEB
+      },
     },
   },
   plugins: [],
