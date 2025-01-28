@@ -2,6 +2,7 @@ import DotSquare from "../DotSquare";
 import Line from "../Line";
 import Stair from "../Stair";
 import Menu from "../Menu";
+import Link from "next/link";
 
 export default function Principal() {
   return (
@@ -40,21 +41,27 @@ export default function Principal() {
             conheça mais sobre minhas habilidades e projetos aqui.
           </p>
           <div className="flex gap-5">
-            <img
-              className="w-10 md:w-16"
-              src="../../../assets/Linkedin.svg"
-              alt="Linkedin"
-            />
-            <img
-              className="w-10 md:w-16"
-              src="../../../assets/Github.svg"
-              alt="Github"
-            />
-            <img
-              className="w-10 md:w-16"
-              src="../../../assets/Document.svg"
-              alt="Document"
-            />
+            <Link href={"https://www.linkedin.com/in/matheusolvcosta/"} target="_blank" rel="noopener noreferrer">
+              <img
+                className="w-10 md:w-16"
+                src="../../../assets/Linkedin.svg"
+                alt="Linkedin"
+              />
+            </Link>
+            <Link href={"https://github.com/fatekkl"} target="_blank" rel="noopener noreferrer">
+              <img
+                className="w-10 md:w-16"
+                src="../../../assets/Github.svg"
+                alt="Github"
+              />
+            </Link>
+            <a href="../../../MatheusCurriculo.pdf" download={"MatheusCurriculo.pdf"}>
+              <img
+                className="w-10 md:w-16"
+                src="../../../assets/Document.svg"
+                alt="Document"
+              />
+            </a>
           </div>
         </div>
 
@@ -94,15 +101,15 @@ export default function Principal() {
           <DotSquare />
         </div>
 
-        
+
 
         <div className="flex w-full justify-end">
-          <Line/>
+          <Line />
         </div>
         <div className="text-jet font-quantico font-bold absolute top-1/2 -rotate-90 -right-20">
           mathtml.1105@gmail.com
         </div>
-       
+
       </section>
     </div>
   );
