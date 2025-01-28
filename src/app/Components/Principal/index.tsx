@@ -1,10 +1,27 @@
+"use client"
+
 import DotSquare from "../DotSquare";
 import Line from "../Line";
 import Stair from "../Stair";
-import Menu from "../Menu";
 import Link from "next/link";
 
 export default function Principal() {
+
+  function copyMail(event: React.MouseEvent<HTMLDivElement>) {
+    const target = event.currentTarget;
+
+    // Copia o texto para a área de transferência
+    navigator.clipboard.writeText(target.innerText);
+
+    // Muda a cor do texto imediatamente
+    target.classList.remove("text-jet")
+    target.classList.add("text-tea");
+
+    setTimeout(() => { target.classList.remove("text-tea"); target.classList.add("text-jet") }, 700)
+
+  }
+
+
   return (
     <div className="flex flex-col md:flex-row min-h-screen relative">
       {/* Seção Jet */}
@@ -106,7 +123,7 @@ export default function Principal() {
         <div className="flex w-full justify-end">
           <Line />
         </div>
-        <div className="text-jet font-quantico font-bold absolute top-1/2 -rotate-90 -right-20">
+        <div onClick={copyMail} className="text-jet font-quantico font-bold absolute top-1/2 -rotate-90 -right-20 hover: cursor-pointer transition-all duration-500 ease-in-out ">
           mathtml.1105@gmail.com
         </div>
 
