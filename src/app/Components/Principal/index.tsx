@@ -58,21 +58,21 @@ export default function Principal() {
             conheça mais sobre minhas habilidades e projetos aqui.
           </p>
           <div className="flex gap-5">
-            <Link href={"https://www.linkedin.com/in/matheusolvcosta/"} target="_blank" rel="noopener noreferrer">
+            <Link href={"https://www.linkedin.com/in/matheusolvcosta/"} target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
               <img
                 className="w-10 md:w-16"
                 src="../../../assets/Linkedin.svg"
                 alt="Linkedin"
               />
             </Link>
-            <Link href={"https://github.com/fatekkl"} target="_blank" rel="noopener noreferrer">
+            <Link href={"https://github.com/fatekkl"} target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
               <img
                 className="w-10 md:w-16"
                 src="../../../assets/Github.svg"
                 alt="Github"
               />
             </Link>
-            <a href="../../../MatheusCurriculo.pdf" download={"MatheusCurriculo.pdf"}>
+            <a href="../../../MatheusCurriculo.pdf" download={"MatheusCurriculo.pdf"} className="hover:scale-125 transition-transform duration-300">
               <img
                 className="w-10 md:w-16"
                 src="../../../assets/Document.svg"
