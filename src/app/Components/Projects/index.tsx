@@ -1,10 +1,18 @@
+"use client"
+
+
 import DotSquare from "../DotSquare";
 import Line2 from "../Line2";
-import MiniSquare from "../MiniSquare";
 import ProjectDescription from "../ProjectDescription";
 import UniqueProject from "../UniqueProject";
 
 export default function Projects() {
+
+
+    console.log("aa")
+
+
+
     return (
         <section style={{ backgroundImage: "url('../assets/Background.png')" }} className="bg-jet min-h-screen bg-no-repeat bg-bottom bg-contain flex justify-center relative">
             <div className="absolute top-1/4 right-3/4 opacity-30">
