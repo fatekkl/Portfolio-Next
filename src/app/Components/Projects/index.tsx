@@ -1,6 +1,7 @@
 "use client"
 
 
+import { useState } from "react";
 import DotSquare from "../DotSquare";
 import Line2 from "../Line2";
 import ProjectDescription from "../ProjectDescription";
@@ -9,9 +10,26 @@ import UniqueProject from "../UniqueProject";
 export default function Projects() {
 
 
-    console.log("aa")
+    const selectProject = (x: number) => {
+        setProjectsSelection(prev => {
+            const newSelections = [...prev].fill(false)
+            newSelections[x] = true
 
+            
+            return newSelections
+        })
+    }
+    
+    const [projectsSelection, setProjectsSelection] = useState([
+        true,
+        false,
+        false,
+        false,
+        false
+    ]);
+    
 
+    
 
     return (
         <section style={{ backgroundImage: "url('../assets/Background.png')" }} className="bg-jet min-h-screen bg-no-repeat bg-bottom bg-contain flex justify-center relative">
@@ -27,8 +45,8 @@ export default function Projects() {
             <div className="absolute bottom-1/4 left-3/4 opacity-40">
                 <DotSquare color="#9AC4F8" />
             </div>
-            
-            
+
+
 
             <div className="w-[50rem] h-[35rem] flex flex-col items-center gap-10 mt-20">
                 <div className="w-full flex items-center justify-evenly">
@@ -37,11 +55,11 @@ export default function Projects() {
                 </div>
                 <div className="w-[50rem] h-[50rem] flex justify-between">
                     <div className="h-full w-60 overflow-auto flex flex-col">
-                        <UniqueProject projectTitle="Resend" selected={true} />
-                        <UniqueProject projectTitle="Ozon Solution" selected={false} />
-                        <UniqueProject projectTitle="Bling" selected={false} />
-                        <UniqueProject projectTitle="Aideia" selected={false} />
-                        <UniqueProject projectTitle="JumpVerso" selected={false} />
+                        <UniqueProject onClick={() => selectProject(0)} projectTitle="Resend" selected={projectsSelection[0]} />
+                        <UniqueProject onClick={() => selectProject(1)} projectTitle="Ozon Solution" selected={projectsSelection[1]} />
+                        <UniqueProject onClick={() => selectProject(2)} projectTitle="Bling" selected={projectsSelection[2]}/>
+                        <UniqueProject onClick={() => selectProject(3)} projectTitle="Aideia" selected={projectsSelection[3]} />
+                        <UniqueProject onClick={() => selectProject(4)} projectTitle="JumpVerso" selected={projectsSelection[4]} />
                     </div>
                     <div className="w-[30rem] h-full flex flex-col gap-4">
                         <div>
@@ -65,7 +83,6 @@ export default function Projects() {
                             <img src="../assets/api_tech.png" />
                             <img src="../assets/cloud_tech.png" />
                         </div>
-
                     </div>
 
                 </div>

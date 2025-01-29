@@ -50,5 +50,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [ ] Adicionar backgrounds para seção de projetos
 - [ ] Tornar todo o TSX com HTML semântico
 - [ ] Remover interface hardcoded
-
+- [ ] Pensar em uma forma de alterar classes do project para selected ou nao, de forma geral
 
