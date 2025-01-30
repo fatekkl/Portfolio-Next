@@ -52,4 +52,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [ ] Remover interface hardcoded
 - [x] Pensar em uma forma de alterar classes do project para selected ou nao, de forma geral
 - [ ] Formatar objeto semânticamente
+- [ ] Adicionar novos assets relacionados a tecnologias de todos os projetos
 
