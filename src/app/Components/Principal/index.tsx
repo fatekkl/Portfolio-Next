@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Principal() {
 
-  function copyMail(event: React.MouseEvent<HTMLDivElement>) {
+  function copy(event: React.MouseEvent<HTMLDivElement>, color_class: string) {
     const target = event.currentTarget;
 
     // Copia o texto para a área de transferência
@@ -15,9 +15,9 @@ export default function Principal() {
 
     // Muda a cor do texto imediatamente
     target.classList.remove("text-jet")
-    target.classList.add("text-tea");
+    target.classList.add(color_class);
 
-    setTimeout(() => { target.classList.remove("text-tea"); target.classList.add("text-jet") }, 700)
+    setTimeout(() => { target.classList.remove(color_class); target.classList.add("text-jet") }, 700)
 
   }
 
@@ -123,7 +123,7 @@ export default function Principal() {
         <div className="flex w-full justify-end">
           <Line />
         </div>
-        <div onClick={copyMail} className="text-jet font-quantico font-bold absolute top-1/2 -rotate-90 -right-20 hover: cursor-pointer transition-all duration-500 ease-in-out ">
+        <div onClick={(event) => copy(event, "text-tea")} className="text-jet font-quantico font-bold absolute top-1/2 -rotate-90 -right-20 hover: cursor-pointer transition-all duration-500 ease-in-out ">
           mathtml.1105@gmail.com
         </div>
 
