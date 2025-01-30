@@ -81,6 +81,13 @@ export default function Projects() {
           "Aprimorei a performance do sistema, aplicando boas práticas e padrões de Orientação a Objetos.";
         description.task_five =
           "Implementei o envio de dados para o pipeline via Webhook, garantindo rastreabilidade das operações.";
+
+
+        description.techs.push("../assets/js_tech.png")
+        description.techs.push("../assets/webhook_tech.png")
+        description.techs.push("../assets/woo_tech.png")
+        description.techs.push("../assets/api_tech.png")
+
         break;
 
       case 2:
@@ -97,6 +104,12 @@ export default function Projects() {
           "Criei rotinas de requisição e listeners via Webhook para sincronizar estoque em tempo real.";
         description.task_five =
           "Integrei o sistema com Amazon SQS para gerenciar e enviar requisições de forma assíncrona.";
+
+        description.techs.push("../assets/aws_tech.png")
+        description.techs.push("../assets/js_tech.png")
+        description.techs.push("../assets/erp_tech.png")
+        description.techs.push("../assets/api_tech.png")
+
         break;
 
       case 3:
@@ -113,6 +126,12 @@ export default function Projects() {
           "Desenvolvi um formulário personalizado para coleta de dados e envio ao ClickUP.";
         description.task_five =
           "Configurei um ambiente de testes para manutenção futura, garantindo qualidade e estabilidade.";
+
+        description.techs.push("../assets/wordpress_tech.png")
+        description.techs.push("../assets/js_tech.png")
+        description.techs.push("../assets/clickup_tech.png")
+        description.techs.push("../assets/api_tech.png")
+
         break;
 
       case 4:
@@ -129,6 +148,12 @@ export default function Projects() {
           "Implementei geração de QR Code para autenticação simplificada do WhatsApp do usuário.";
         description.task_five =
           "Criei um sistema de seleção de grupos para envio automático via Webhook, ampliando o alcance das campanhas.";
+
+
+        description.techs.push("../assets/express_tech.png")
+        description.techs.push("../assets/js_tech.png")
+        description.techs.push("../assets/webhook_tech.png")
+        description.techs.push("../assets/api_tech.png")
         break;
 
       default:
@@ -222,10 +247,10 @@ export default function Projects() {
 
             {/* Ícones de tecnologias (exemplo) */}
             <div className="flex gap-2">
-              <img src={selectDescription().techs[1]}/>
-              <img src={selectDescription().techs[2]}/>
-              <img src={selectDescription().techs[3]}/>
-              <img src={selectDescription().techs[4]}/>
+              <img src={selectDescription().techs[1]} />
+              <img src={selectDescription().techs[2]} />
+              <img src={selectDescription().techs[3]} />
+              <img src={selectDescription().techs[4]} />
             </div>
           </div>
         </div>
