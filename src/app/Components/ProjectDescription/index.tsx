@@ -1,15 +1,18 @@
-import MiniSquare from "../MiniSquare";
+import MiniSquare from "../MiniSquare"
 
 
 interface ProjectDescriptionProps {
     description: string,
 }
 
-export default function ProjectDescription({description}: ProjectDescriptionProps) {
+export default function ProjectDescription({ description }: ProjectDescriptionProps) {
     return (
-        <div className="flex items-baseline gap-4 align-baseline w-[23.75rem]">
+        <div className="flex gap-4 align-baseline items-baseline">
             <MiniSquare/>
-            <p className="font-semibold text-[1rem]">{description}</p>
+            <div className="flex w-[25.75rem]">
+                <p className="font-semibold text-[1rem]">{description}</p>
+            </div>
         </div>
+
     )
 }
