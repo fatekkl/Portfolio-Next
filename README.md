@@ -46,7 +46,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [x] Adicionar menu na journey page
 - [ ] Rever espaçamento dos textos na journey page
 - [x] Adicionar interatividade de click para seleção de projetos
-- [] Adicionar conteudo e outra seção na parte de projetos
+- [ ] Adicionar conteudo e outra seção na parte de projetos
 - [x] Adicionar backgrounds para seção de projetos
 - [ ] Tornar todo o TSX com HTML semântico
 - [ ] Remover interface hardcoded
