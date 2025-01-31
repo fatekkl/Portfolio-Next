@@ -13,7 +13,7 @@ export default function Menu() {
             if (scrollPosition < 840) {
                 setColor("#343330");
             } else {
-                setColor("#C7FFDA");
+                setColor("#9AC4F8");
             }
         };
 
@@ -55,12 +55,18 @@ export default function Menu() {
                     <path className="transition-all duration-500 ease-in" d="M0 2H50" stroke={color} strokeWidth="4" />
                 </svg>
             </div>
-            <div className={`flex flex-col  fixed w-80 h-80 mr-6 -mt-2 rounded-2xl transition-all duration-500 ease-in-out transform origin-top-right ${menuOpen ? "scale-100 bg-tea" : "scale-0"}`}>
-                <div className="flex flex-col gap-4 ml-4 mt-20">
-                    <p className="text-jet font-bold text-[1.125rem]">Projetos</p>
-                    <p className="text-jet font-bold text-[1.125rem]">Currículo</p>
+            <div className={`flex flex-col gap-4  fixed w-80 h-80 mr-6 -mt-2 rounded-2xl transition-all duration-500 ease-in-out transform origin-top-right ${menuOpen ? "scale-100 bg-gray-50" : "scale-0"}`}>
+                <div className="flex flex-col items-center gap-4 mt-20">
+                    <p className={`text-jet font-bold text-[1.275rem] ${menuOpen ? "opacity-100 " : "opacity-0"}`}>Projetos</p>
+                    <p className={`text-jet font-bold text-[1.275rem] ${menuOpen ? "opacity-100 " : "opacity-0"}`}>Currículo</p>
                 </div>
+                <span className="text-jet opacity-60 font-extrabold text-xl text-center mt-10">Diga Olá</span>
+                <div className="w-full flex justify-center gap-4">
+                    <img className="w-10"  src="../../../assets/linkedin.png"/>
+                    <img className="w-10" src="../../../assets/email.png"/>
+                    <img className="w-10"  src="../../../assets/whatsapp.png"/>
 
+                </div>
             </div>
         </div>
     );
