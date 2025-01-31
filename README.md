@@ -55,4 +55,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [x] Adicionar novos assets relacionados a tecnologias de todos os projetos
 - [ ] Adicionar funcionalidade no menu
 - [ ] Melhorar interatividade nas telas, adicionar animações e fluidez
+- [ ] Trabalhar na responsividade
+- [ ] Personalizar barra de rolagem
+- [ ] Dar deploy
   
