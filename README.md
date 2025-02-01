@@ -77,6 +77,7 @@ Para executar este projeto localmente, siga os passos abaixo:
 - [ ] Dar deploy
 - [ ] Formatar objeto semanticamente
 - [ ] Tornar todo o TSX com HTML semântico
+- [ ] Adicionar versão em inglês
 
 ## 📡 Deploy
 
