@@ -41,7 +41,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 - [x] **Adicionar menu na tela inicial**
 - [x] **Fixar flexbox para facilitar responsividade futura**
-- [ ] Revisar ultimo texto da journey page
+- [x] Revisar ultimo texto da journey page
 - [x] Criar sistema para receber cores nos SVGS diretamente no TSX
 - [x] Adicionar menu na journey page
 - [ ] Rever espaçamento dos textos na journey page
@@ -53,9 +53,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [x] Pensar em uma forma de alterar classes do project para selected ou nao, de forma geral
 - [ ] Formatar objeto semânticamente
 - [x] Adicionar novos assets relacionados a tecnologias de todos os projetos
-- [ ] Adicionar funcionalidade no menu
+- [x] Adicionar funcionalidade no menu
 - [ ] Melhorar interatividade nas telas, adicionar animações e fluidez
 - [ ] Trabalhar na responsividade
 - [ ] Personalizar barra de rolagem
 - [ ] Dar deploy
+- [x] Corrigir formatação dos textos
   
