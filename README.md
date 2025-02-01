@@ -48,16 +48,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [x] Adicionar interatividade de click para seleção de projetos
 - [x] Adicionar conteudo e outra seção na parte de projetos
 - [x] Adicionar backgrounds para seção de projetos
-- [ ] Tornar todo o TSX com HTML semântico
-- [ ] Remover interface hardcoded
 - [x] Pensar em uma forma de alterar classes do project para selected ou nao, de forma geral
-- [ ] Formatar objeto semânticamente
 - [x] Adicionar novos assets relacionados a tecnologias de todos os projetos
 - [x] Adicionar funcionalidade no menu
 - [x] Melhorar interatividade nas telas, adicionar animações e fluidez
-- [ ] Trabalhar na responsividade
+- [x] Corrigir formatação dos textos
+- [x] Finalizar menu
+- [ ] Tornar ele completamente responsivo
 - [ ] Personalizar barra de rolagem
 - [ ] Dar deploy
-- [x] Corrigir formatação dos textos
-- [ ] Finalizar menu
-  
+- [ ] Formatar objeto semânticamente
+- [ ] Tornar todo o TSX com HTML semântico
+
