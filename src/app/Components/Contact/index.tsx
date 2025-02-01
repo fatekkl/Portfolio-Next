@@ -6,8 +6,8 @@ export default function Contact() {
 
     return (
         <section className="min-h-[50vh] w-auto bg-jordy flex flex-col items-center justify-between">
-            <h1 className="text-4xl font-bold drop-shadow-custom-eb">Mande uma mensagem!</h1>
-            <h2 className="text-2xl font-bold">Inove. Conecte. Fale comigo!</h2>
+            <h1 className="text-4xl font-bold text-jet">Mande uma mensagem!</h1>
+            <h2 className="text-2xl font-bold text-jet">Inove. Conecte. Fale comigo!</h2>
             <div className="flex flex-col gap-8">
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mathtml.1105@gmail.com&su=Olá%20Matheus&body=Vimos%20seu%20portfólio..." target="_blank" rel="noopener noreferrer" className="w-96 h-20 bg-tea rounded-2xl flex items-center text-jet font-bold gap-4 text-xl justify-start hover:cursor-pointer">
                     <ContactButton path="../../../assets/email.png" />

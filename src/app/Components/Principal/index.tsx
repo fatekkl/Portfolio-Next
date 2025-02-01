@@ -88,8 +88,8 @@ export default function Principal() {
             Solucionando seus problemas com software
           </span>
           <div className="flex justify-between gap-8">
-            <span className="w-60 text-tea text-justify text-[1rem]">
-              Habilidoso com aplicações escaláveis e integração contínua.
+            <span className="w-72 text-tea text-justify text-[1rem]">
+              Desenvolto com escalabilidade, integracão contínua e melhora de performance.
             </span>
             <span className="w-52 text-tea text-justify text-[1rem]">
               Experiência em projetos por todo o Brasil.

@@ -223,7 +223,7 @@ export default function Projects() {
           </div>
 
           {/* Descrições do Projeto */}
-          <div className="w-[35rem] h-full flex flex-col gap-4">
+          <div className="w-[35rem] h-full flex flex-col gap-4 ">
             <div>
               <div className="flex justify-start gap-4">
                 <h1 className="text-tea text-2xl font-bold">

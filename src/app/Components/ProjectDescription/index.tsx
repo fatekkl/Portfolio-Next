@@ -9,7 +9,7 @@ export default function ProjectDescription({ description }: ProjectDescriptionPr
     return (
         <div className="flex gap-4 align-baseline items-baseline">
             <MiniSquare/>
-            <div className="flex w-[25.75rem]">
+            <div className="flex w-[30rem]">
                 <p className="font-semibold text-[1rem]">{description}</p>
             </div>
         </div>
