@@ -35,7 +35,7 @@ export default function Journey() {
                     </div>
                     <div className="flex flex-col gap-2">
                         <h2 className="text-tea text-[2rem] font-bold">O que busco agora?</h2>
-                        <p className="font-normal text-justify text-2xl max-w-70 h-auto">Atualmente estou buscando a minha primeira oportunidade de emprego FIXO e prester a iniciar o meu ensino superior. Em paralelo a meus estudos sobre software escalável, estrutura de dados e UI/UX.</p>
+                        <p className="font-normal text-justify text-2xl max-w-70 h-auto">Atualmente, estou em busca da minha primeira oportunidade de emprego em tempo integral e me preparo para ingressar no ensino superior. Paralelamente, sigo aprimorando meus conhecimentos em software escalável, estrutura de dados e UI/UX.</p>
                     </div>
                 </div>
                 <img src="../../../assets/Storyset.svg" className="mr-16 max-w-full h-auto" alt="Ilustração de jornada profissional" />
