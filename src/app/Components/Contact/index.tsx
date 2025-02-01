@@ -9,7 +9,7 @@ export default function Contact() {
             <h1 className="text-4xl font-bold text-jet">Mande uma mensagem!</h1>
             <h2 className="text-2xl font-bold text-jet">Inove. Conecte. Fale comigo!</h2>
             <div className="flex flex-col gap-8">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mathtml.1105@gmail.com&su=Olá%20Matheus&body=Vimos%20seu%20portfólio..." target="_blank" rel="noopener noreferrer" className="w-96 h-20 bg-tea rounded-2xl flex items-center text-jet font-bold gap-4 text-xl justify-start transition-all duration-300 ease-in-out hover:cursor-pointer hover:scale-110">
+                <a href="mailto:mathtml.1105@gmail.com?body=Ol%C3%A1,%20vimos%20seu%20portf%C3%B3lio..." target="_blank" rel="noopener noreferrer" className="w-96 h-20 bg-tea rounded-2xl flex items-center text-jet font-bold gap-4 text-xl justify-start transition-all duration-300 ease-in-out hover:cursor-pointer hover:scale-110">
                     <ContactButton path="../../../assets/email.png" />
                     <span>mathtml.1105@gmail.com</span>
                 </a>
