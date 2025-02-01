@@ -40,7 +40,7 @@ export default function Projects() {
       task_three: "",
       task_four: "",
       task_five: "",
-      techs: [""]
+      techs: [""],
     };
 
     switch (x) {
@@ -168,6 +168,7 @@ export default function Projects() {
 
   return (
     <section
+      id="project"
       style={{ backgroundImage: "url('../assets/Background.png')" }}
       className="bg-jet min-h-screen bg-no-repeat bg-bottom bg-contain flex justify-center relative"
     >
@@ -223,7 +224,7 @@ export default function Projects() {
           </div>
 
           {/* Descrições do Projeto */}
-          <div className="w-[35rem] h-full flex flex-col gap-4 ">
+          <div className="w-[35rem] h-full flex flex-col gap-4">
             <div>
               <div className="flex justify-start gap-4">
                 <h1 className="text-tea text-2xl font-bold">
@@ -234,7 +235,9 @@ export default function Projects() {
                   {selectDescription().title}
                 </span>
               </div>
-              <p className="font-light text-jordy">{selectDescription().date}</p>
+              <div className="flex justify-between align-baseline">
+                <p className="font-light text-jordy">{selectDescription().date}</p>
+              </div>
             </div>
 
             <div className="flex flex-col gap-6 h-full">
@@ -246,11 +249,13 @@ export default function Projects() {
             </div>
 
             {/* Ícones de tecnologias (exemplo) */}
-            <div className="flex gap-2">
-              <img src={selectDescription().techs[1]} />
-              <img src={selectDescription().techs[2]} />
-              <img src={selectDescription().techs[3]} />
-              <img src={selectDescription().techs[4]} />
+            <div className="flex gap-40">
+              <div className="flex gap-4">
+                <img src={selectDescription().techs[1]} />
+                <img src={selectDescription().techs[2]} />
+                <img src={selectDescription().techs[3]} />
+                <img src={selectDescription().techs[4]} />
+              </div>
             </div>
           </div>
         </div>

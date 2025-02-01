@@ -44,9 +44,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [x] Revisar ultimo texto da journey page
 - [x] Criar sistema para receber cores nos SVGS diretamente no TSX
 - [x] Adicionar menu na journey page
-- [ ] Rever espaçamento dos textos na journey page
+- [x] Rever espaçamento dos textos na journey page
 - [x] Adicionar interatividade de click para seleção de projetos
-- [ ] Adicionar conteudo e outra seção na parte de projetos
+- [x] Adicionar conteudo e outra seção na parte de projetos
 - [x] Adicionar backgrounds para seção de projetos
 - [ ] Tornar todo o TSX com HTML semântico
 - [ ] Remover interface hardcoded
@@ -54,9 +54,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [ ] Formatar objeto semânticamente
 - [x] Adicionar novos assets relacionados a tecnologias de todos os projetos
 - [x] Adicionar funcionalidade no menu
-- [ ] Melhorar interatividade nas telas, adicionar animações e fluidez
+- [x] Melhorar interatividade nas telas, adicionar animações e fluidez
 - [ ] Trabalhar na responsividade
 - [ ] Personalizar barra de rolagem
 - [ ] Dar deploy
 - [x] Corrigir formatação dos textos
+- [ ] Finalizar menu
   

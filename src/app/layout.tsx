@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
+    <html className="scroll-smooth" lang="pt-br">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${quantico.variable} font-poppins antialiased select-none`}
       >

@@ -55,17 +55,29 @@ export default function Menu() {
                     <path className="transition-all duration-500 ease-in" d="M0 2H50" stroke={color} strokeWidth="4" />
                 </svg>
             </div>
-            <div className={`flex flex-col gap-4  fixed w-80 h-80 mr-6 -mt-2 rounded-2xl transition-all duration-500 ease-in-out transform origin-top-right ${menuOpen ? "scale-100 bg-gray-50" : "scale-0"}`}>
+            <div className={`flex flex-col gap-4  fixed w-80 h-96 mr-6 -mt-2 rounded-2xl transition-all duration-500 ease-in-out transform origin-top-right ${menuOpen ? "scale-100 bg-gray-50" : "scale-0"}`}>
                 <div className="flex flex-col items-center gap-4 mt-20">
-                    <p className={`text-jet font-bold text-[1.275rem] ${menuOpen ? "opacity-100 " : "opacity-0"}`}>Projetos</p>
-                    <p className={`text-jet font-bold text-[1.275rem] ${menuOpen ? "opacity-100 " : "opacity-0"}`}>Currículo</p>
+                    <a href="#principal">
+                        <p className={`text-jet font-bold text-[1.275rem] ${menuOpen ? "opacity-100 " : "opacity-0"}`}>Home</p>
+                    </a>
+                    <a href="#project">
+                        <p className={`text-jet font-bold text-[1.275rem] ${menuOpen ? "opacity-100 " : "opacity-0"}`}>Projetos</p>
+                    </a>
+                    <a href="">
+                        <p className={`text-jet font-bold text-[1.275rem] ${menuOpen ? "opacity-100 " : "opacity-0"}`}>Currículo</p>
+                    </a>
                 </div>
                 <span className="text-jet opacity-60 font-extrabold text-xl text-center mt-10">Diga Olá</span>
                 <div className="w-full flex justify-center gap-4">
-                    <img className="w-10"  src="../../../assets/linkedin.png"/>
-                    <img className="w-10" src="../../../assets/email.png"/>
-                    <img className="w-10"  src="../../../assets/whatsapp.png"/>
-
+                    <a href="https://www.linkedin.com/in/matheusolvcosta/" target="_blank" rel="noopener noreferrer">
+                        <img className="w-10" src="../../../assets/linkedin.png" />
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mathtml.1105@gmail.com&su=Olá%20Matheus&body=Vimos%20seu%20portfólio..." target="_blank" rel="noopener noreferrer">
+                        <img className="w-10" src="../../../assets/email.png" />
+                    </a>
+                    <a href="https://wa.me/5511987539647?text=Ol%C3%A1%20Matheus!" target="_blank" rel="noopener noreferrer">
+                        <img className="w-10" src="../../../assets/whatsapp.png" />
+                    </a>
                 </div>
             </div>
         </div>

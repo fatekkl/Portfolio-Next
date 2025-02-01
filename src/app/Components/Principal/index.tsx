@@ -23,7 +23,7 @@ export default function Principal() {
 
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen relative">
+    <div id="principal" className="flex flex-col md:flex-row min-h-screen relative">
       {/* Seção Jet */}
       <section className="w-full md:w-2/3 h-auto md:h-screen bg-jet relative">
         {/* Conteúdo da Seção Jet */}
