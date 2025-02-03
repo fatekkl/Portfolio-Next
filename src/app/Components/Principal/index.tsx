@@ -28,9 +28,10 @@ export default function Principal() {
       <section className="w-full md:w-2/3 h-auto md:h-screen bg-jet relative">
         {/* Conteúdo da Seção Jet */}
         {/* Ajuste de margens para telas menores e absolutas em telas maiores */}
-        <div className="absolute ml-4 md:ml-12 mt-8">
+        <div className="absolute ml-4 md:ml-12 mt-8 max-sm:hidden">
           <Stair />
         </div>
+        
 
         {/* Elementos decorativos que podem ficar ocultos em telas muito pequenas */}
         <div className="max-sm:hidden absolute left-2/4 opacity-30 top-48">

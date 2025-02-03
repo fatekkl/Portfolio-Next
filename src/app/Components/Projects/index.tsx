@@ -173,27 +173,27 @@ export default function Projects() {
       className="bg-jet min-h-screen bg-no-repeat bg-bottom bg-contain flex justify-center relative"
     >
       {/* Elementos decorativos */}
-      <div className="absolute top-1/4 right-3/4 opacity-30">
+      <div className="absolute max-sm:hidden top-1/4 right-3/4 opacity-30">
         <DotSquare />
       </div>
-      <div className="absolute bottom-1/4 left-1/4 opacity-30">
+      <div className="absolute max-sm:hidden bottom-1/4 left-1/4 opacity-30">
         <DotSquare />
       </div>
-      <div className="absolute top-1/4 right-1/4 opacity-40">
+      <div className="absolute max-sm:hidden top-1/4 right-1/4 opacity-40">
         <DotSquare color="#9AC4F8" />
       </div>
-      <div className="absolute bottom-1/4 left-3/4 opacity-40">
+      <div className="absolute max-sm:hidden bottom-1/4 left-3/4 opacity-40">
         <DotSquare color="#9AC4F8" />
       </div>
 
       {/* Conteúdo principal */}
       <div className="w-[50rem] h-[35rem] flex flex-col items-center gap-10 mt-20">
         <div className="w-full flex items-center justify-evenly">
-          <h1 className="text-3xl font-bold text-jordy">Projetos em que atuei</h1>
-          <Line2 />
+          <h1 className="md:text-3xl max-sm:text-2xl font-bold text-jordy">Projetos em que atuei</h1>
+          <Line2/>
         </div>
 
-        <div className="w-[55rem] h-[50rem] flex justify-between">
+        <div className="md:w-[55rem] h-[50rem] flex justify-between">
           {/* Lista de Projetos */}
           <div className="h-full w-60 overflow-auto flex flex-col">
             <UniqueProject
@@ -224,7 +224,7 @@ export default function Projects() {
           </div>
 
           {/* Descrições do Projeto */}
-          <div className="w-[35rem] h-full flex flex-col gap-4">
+          <div className="w-[35rem] h-full flex flex-col gap-4 max-sm:hidden">
             <div>
               <div className="flex justify-start gap-4">
                 <h1 className="text-tea text-2xl font-bold">

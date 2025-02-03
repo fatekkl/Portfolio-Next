@@ -32,7 +32,7 @@ export default function Menu() {
     }
 
     return (
-        <div onClick={transformMenu} className="w-full flex justify-end mt-10 absolute z-50">
+        <div onClick={transformMenu} className="w-full flex justify-end mt-10 absolute z-50 max-sm:hidden">
             <div className={`flex flex-col gap-5 fixed transform scale-x-[-1] cursor-pointer transition-all duration-2000 ease-in-out z-50 mt-6 mr-10`}>
                 <svg
                     className={`transition-all duration-500 ease-in-out ${menuOpen ? "-rotate-45" : "rotate-0"}`}
