@@ -79,6 +79,7 @@ Para executar este projeto localmente, siga os passos abaixo:
 - [ ] Tornar todo o TSX com HTML semântico
 - [ ] Adicionar versão em inglês
 - [ ] Adicionar header para substituir menu (Versão Mobile)
+- [ ] Arrumar para telas médias(Ele buga a partir de 643 de width)
 
 ## 📡 Deploy
 
