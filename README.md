@@ -78,6 +78,7 @@ Para executar este projeto localmente, siga os passos abaixo:
 - [ ] Formatar objeto semanticamente
 - [ ] Tornar todo o TSX com HTML semântico
 - [ ] Adicionar versão em inglês
+- [ ] Adicionar header para substituir menu (Versão Mobile)
 
 ## 📡 Deploy
 
