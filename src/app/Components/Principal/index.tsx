@@ -23,7 +23,7 @@ export default function Principal() {
 
 
   return (
-    <div id="principal" className="flex flex-col md:flex-row min-h-screen relative">
+    <div id="principal" className="flex">
       {/* Seção Jet */}
       <section className="w-full md:w-2/3 h-auto md:h-screen bg-jet relative">
         {/* Conteúdo da Seção Jet */}
@@ -44,16 +44,16 @@ export default function Principal() {
         </div>
 
         {/* Container principal de textos */}
-        <div className="flex flex-col ml-4 md:ml-12 mt-16 md:mt-56 gap-6 px-4 md:px-0">
-          <h1 className="font-bold text-3xl md:text-5xl leading-normal">
+        <div className="flex flex-col md:ml-12 md:mt-56 gap-6 max-sm:items-center max-sm:justify-center h-full">
+          <h1 className="font-bold text-xl md:text-5xl leading-normal max-sm:text-center">
             Olá,
             <br />
             Sou o Matheus 👋
           </h1>
-          <h2 className="font-bold text-xl md:text-3xl text-jordy">
+          <h2 className="font-bold text-2xl text-jordy max-sm:text-center">
             Desenvolvedor Fullstack
           </h2>
-          <p className="text-justify text-md md:text-2xl max-w-full md:w-[30rem]">
+          <p className="md:w-4/12 text-xl max-sm:w-8/12 max-sm:text-center">
             Sou um desenvolvedor curioso e apaixonado por tecnologia,
             conheça mais sobre minhas habilidades e projetos aqui.
           </p>
@@ -84,14 +84,14 @@ export default function Principal() {
 
         {/* Texto extra (abaixo) */}
         <div className="hidden md:flex flex-col gap-9 w-[38rem] h-36 absolute top-3/4 left-1/2 transform -translate-x-1/4">
-          <span className="text-2xl text-center text-tea font-bold">
+          <span className="text-xl text-center text-tea font-bold">
             Solucionando seus problemas com software
           </span>
           <div className="flex justify-between gap-8">
-            <span className="w-72 text-tea text-justify text-[1rem]">
+            <span className="text-tea">
               Desenvolto com escalabilidade, integracão contínua e melhora de performance.
             </span>
-            <span className="w-52 text-tea text-justify text-[1rem]">
+            <span className="text-tea">
               Experiência em projetos por todo o Brasil.
             </span>
           </div>
@@ -100,7 +100,7 @@ export default function Principal() {
 
       {/* Imagem Centralizada (oculta em telas muito pequenas) */}
       <img
-        className="hidden md:block absolute top-1/2 left-2/3 transform -translate-y-1/2 -translate-x-1/2 z-50 max-h-[80vh]"
+        className="absolute top-1/2 left-2/3 transform -translate-y-1/2 -translate-x-1/2 z-50 max-sm:hidden"
         src="../../../assets/Eu.png"
         alt="Eu"
       />
@@ -108,13 +108,13 @@ export default function Principal() {
       {/* Seção Jordy */}
       <section className="bg-jordy w-1/3 flex flex-col h-screen justify-end">
         {/* Elementos decorativos (ocultos em telas pequenas) */}
-        <div className="absolute bottom-3/4 ml-14 right-1/4">
+        <div className="hidden md:block absolute bottom-3/4 ml-14 right-1/4">
           <DotSquare />
         </div>
-        <div className="absolute bottom-2/4 ml-36 left-3/4">
+        <div className="hidden md:block absolute bottom-2/4 ml-36 left-3/4">
           <DotSquare />
         </div>
-        <div className="absolute top-3/4 ml-26 right-1/4">
+        <div className="hidden md:block absolute top-3/4 ml-26 right-1/4">
           <DotSquare />
         </div>
 
