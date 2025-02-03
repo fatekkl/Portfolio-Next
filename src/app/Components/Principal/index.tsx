@@ -33,7 +33,7 @@ export default function Principal() {
         </div>
 
         {/* Elementos decorativos que podem ficar ocultos em telas muito pequenas */}
-        <div className="hidden md:block absolute left-2/4 opacity-30 top-48">
+        <div className="max-sm:hidden absolute left-2/4 opacity-30 top-48">
           <DotSquare />
         </div>
         <div className="hidden md:block absolute left-[60%] opacity-30 top-1/2">
@@ -106,21 +106,21 @@ export default function Principal() {
       />
 
       {/* Seção Jordy */}
-      <section className="bg-jordy w-1/3 flex flex-col h-screen justify-end">
+      <section className="bg-jordy max-sm:w-1/6 md:w-1/3 flex flex-col h-screen justify-end">
         {/* Elementos decorativos (ocultos em telas pequenas) */}
-        <div className="hidden md:block absolute bottom-3/4 ml-14 right-1/4">
+        <div className="max-sm:hidden absolute bottom-3/4 ml-14 right-1/4">
           <DotSquare />
         </div>
-        <div className="hidden md:block absolute bottom-2/4 ml-36 left-3/4">
+        <div className="max-sm:hidden absolute bottom-2/4 ml-36 left-3/4">
           <DotSquare />
         </div>
-        <div className="hidden md:block absolute top-3/4 ml-26 right-1/4">
+        <div className="max-sm:hidden absolute top-3/4 ml-26 right-1/4">
           <DotSquare />
         </div>
 
 
 
-        <div className="flex w-full justify-end">
+        <div className="flex w-full justify-end max-sm:hidden">
           <Line />
         </div>
         <div onClick={(event) => copy(event, "text-tea")} className="text-jet font-quantico font-bold absolute top-1/2 -rotate-90 -right-20 hover: cursor-pointer transition-all duration-500 ease-in-out ">
