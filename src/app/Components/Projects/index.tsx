@@ -26,7 +26,6 @@ export default function Projects() {
       }
     }
 
-    // Retorna a descrição referente ao projeto selecionado
     return loadDescription(activeProject);
   };
 
@@ -48,112 +47,60 @@ export default function Projects() {
         description.title = "Resend";
         description.function = "Desenvolvedor Fullstack";
         description.date = "Junho de 2024";
-        description.task_one =
-          "Realizei a configuração completa de um servidor Linux (Ubuntu), garantindo segurança e estabilidade para o envio de e-mails.";
-        description.task_two =
-          "Implementei uma rotina automatizada (cron) para disparos de e-mails em datas e horários selecionados.";
-        description.task_three =
-          "Desenvolvi uma API robusta com rotas de envio e CRUD para integrar o serviço de e-mails.";
-        description.task_four =
-          "Criei endpoints para validar e configurar domínios exclusivos por usuário.";
-        description.task_five =
-          "Configurei e hospedei o servidor web utilizando Apache, seguindo boas práticas de segurança.";
-
-        description.techs.push("../assets/php_tech.png")
-        description.techs.push("../assets/linux_tech.png")
-        description.techs.push("../assets/cloud_tech.png")
-        description.techs.push("../assets/api_tech.png")
-
-
+        description.task_one = "Realizei a configuração completa de um servidor Linux (Ubuntu), garantindo segurança e estabilidade para o envio de e-mails.";
+        description.task_two = "Implementei uma rotina automatizada (cron) para disparos de e-mails em datas e horários selecionados.";
+        description.task_three = "Desenvolvi uma API robusta com rotas de envio e CRUD para integrar o serviço de e-mails.";
+        description.task_four = "Criei endpoints para validar e configurar domínios exclusivos por usuário.";
+        description.task_five = "Configurei e hospedei o servidor web utilizando Apache, seguindo boas práticas de segurança.";
+        description.techs.push("../assets/php_tech.png", "../assets/linux_tech.png", "../assets/cloud_tech.png", "../assets/api_tech.png");
         break;
 
       case 1:
         description.title = "Ozon Solution";
         description.function = "Desenvolvedor Backend";
         description.date = "Março de 2024";
-        description.task_one =
-          "Implementei a integração entre WooCommerce e Kommo CRM via API para sincronização de dados.";
-        description.task_two =
-          "Configurei um pipeline (CI/CD) para automatizar testes e deploy, otimizando o fluxo de desenvolvimento.";
-        description.task_three =
-          "Criei leads dinamicamente no CRM, de acordo com as vendas realizadas no WooCommerce.";
-        description.task_four =
-          "Aprimorei a performance do sistema, aplicando boas práticas e padrões de Orientação a Objetos.";
-        description.task_five =
-          "Implementei o envio de dados para o pipeline via Webhook, garantindo rastreabilidade das operações.";
-
-
-        description.techs.push("../assets/js_tech.png")
-        description.techs.push("../assets/webhook_tech.png")
-        description.techs.push("../assets/woo_tech.png")
-        description.techs.push("../assets/api_tech.png")
-
+        description.task_one = "Implementei a integração entre WooCommerce e Kommo CRM via API para sincronização de dados.";
+        description.task_two = "Configurei um pipeline (CI/CD) para automatizar testes e deploy, otimizando o fluxo de desenvolvimento.";
+        description.task_three = "Criei leads dinamicamente no CRM, de acordo com as vendas realizadas no WooCommerce.";
+        description.task_four = "Aprimorei a performance do sistema, aplicando boas práticas e padrões de Orientação a Objetos.";
+        description.task_five = "Implementei o envio de dados para o pipeline via Webhook, garantindo rastreabilidade das operações.";
+        description.techs.push("../assets/js_tech.png", "../assets/webhook_tech.png", "../assets/woo_tech.png", "../assets/api_tech.png");
         break;
 
       case 2:
         description.title = "Bling";
         description.function = "Desenvolvedor Fullstack";
         description.date = "Setembro a Outubro de 2024";
-        description.task_one =
-          "Desenvolvi uma API para se comunicar com o Bling (ERP), facilitando o gerenciamento de pedidos e estoque.";
-        description.task_two =
-          "Hospedei serviços na AWS (Lambda, EC3 e Amazon EventBridge), otimizando custos e escalabilidade.";
-        description.task_three =
-          "Automatizei o processo de renovação de token OAuth 2.0, garantindo a continuidade do serviço.";
-        description.task_four =
-          "Criei rotinas de requisição e listeners via Webhook para sincronizar estoque em tempo real.";
-        description.task_five =
-          "Integrei o sistema com Amazon SQS para gerenciar e enviar requisições de forma assíncrona.";
-
-        description.techs.push("../assets/aws_tech.png")
-        description.techs.push("../assets/js_tech.png")
-        description.techs.push("../assets/erp_tech.png")
-        description.techs.push("../assets/api_tech.png")
-
+        description.task_one = "Desenvolvi uma API para se comunicar com o Bling (ERP), facilitando o gerenciamento de pedidos e estoque.";
+        description.task_two = "Hospedei serviços na AWS (Lambda, EC3 e Amazon EventBridge), otimizando custos e escalabilidade.";
+        description.task_three = "Automatizei o processo de renovação de token OAuth 2.0, garantindo a continuidade do serviço.";
+        description.task_four = "Criei rotinas de requisição e listeners via Webhook para sincronizar estoque em tempo real.";
+        description.task_five = "Integrei o sistema com Amazon SQS para gerenciar e enviar requisições de forma assíncrona.";
+        description.techs.push("../assets/aws_tech.png", "../assets/js_tech.png", "../assets/erp_tech.png", "../assets/api_tech.png");
         break;
 
       case 3:
         description.title = "Aideia";
         description.function = "Desenvolvedor Backend";
         description.date = "Agosto de 2024";
-        description.task_one =
-          "Integrei o formulário WordPress com o ClickUP, unificando os dados de captação de leads.";
-        description.task_two =
-          "Criei leads por meio da API do ClickUP, automatizando o fluxo de entrada de informações.";
-        description.task_three =
-          "Atualizei o pipeline (CI/CD) para garantir versionamento e deploy contínuos.";
-        description.task_four =
-          "Desenvolvi um formulário personalizado para coleta de dados e envio ao ClickUP.";
-        description.task_five =
-          "Configurei um ambiente de testes para manutenção futura, garantindo qualidade e estabilidade.";
-
-        description.techs.push("../assets/wordpress_tech.png")
-        description.techs.push("../assets/js_tech.png")
-        description.techs.push("../assets/clickup_tech.png")
-        description.techs.push("../assets/api_tech.png")
-
+        description.task_one = "Integrei o formulário WordPress com o ClickUP, unificando os dados de captação de leads.";
+        description.task_two = "Criei leads por meio da API do ClickUP, automatizando o fluxo de entrada de informações.";
+        description.task_three = "Atualizei o pipeline (CI/CD) para garantir versionamento e deploy contínuos.";
+        description.task_four = "Desenvolvi um formulário personalizado para coleta de dados e envio ao ClickUP.";
+        description.task_five = "Configurei um ambiente de testes para manutenção futura, garantindo qualidade e estabilidade.";
+        description.techs.push("../assets/wordpress_tech.png", "../assets/js_tech.png", "../assets/clickup_tech.png", "../assets/api_tech.png");
         break;
 
       case 4:
         description.title = "JumpVerso";
         description.function = "Desenvolvedor Fullstack";
         description.date = "Junho a Julho de 2024";
-        description.task_one =
-          "Criei uma interface web para exibir dados de usuários cadastrados, facilitando a gestão de perfis.";
-        description.task_two =
-          "Desenvolvi um servidor para gerenciar autenticação, garantindo segurança dos usuários.";
-        description.task_three =
-          "Integrei a Evolution API (WhatsApp) com a plataforma web, habilitando comunicação automatizada.";
-        description.task_four =
-          "Implementei geração de QR Code para autenticação simplificada do WhatsApp do usuário.";
-        description.task_five =
-          "Criei um sistema de seleção de grupos para envio automático via Webhook, ampliando o alcance das campanhas.";
-
-
-        description.techs.push("../assets/express_tech.png")
-        description.techs.push("../assets/js_tech.png")
-        description.techs.push("../assets/webhook_tech.png")
-        description.techs.push("../assets/api_tech.png")
+        description.task_one = "Criei uma interface web para exibir dados de usuários cadastrados, facilitando a gestão de perfis.";
+        description.task_two = "Desenvolvi um servidor para gerenciar autenticação, garantindo segurança dos usuários.";
+        description.task_three = "Integrei a Evolution API (WhatsApp) com a plataforma web, habilitando comunicação automatizada.";
+        description.task_four = "Implementei geração de QR Code para autenticação simplificada do WhatsApp do usuário.";
+        description.task_five = "Criei um sistema de seleção de grupos para envio automático via Webhook, ampliando o alcance das campanhas.";
+        description.techs.push("../assets/express_tech.png", "../assets/js_tech.png", "../assets/webhook_tech.png", "../assets/api_tech.png");
         break;
 
       default:
@@ -168,7 +115,7 @@ export default function Projects() {
 
   return (
     <section
-      id="project"
+      id="projects"
       style={{ backgroundImage: "url('../assets/Background.png')" }}
       className="bg-jet min-h-screen bg-no-repeat bg-bottom bg-contain flex justify-center relative"
     >
@@ -188,14 +135,14 @@ export default function Projects() {
 
       {/* Conteúdo principal */}
       <div className="w-[50rem] h-[35rem] flex flex-col items-center gap-10 mt-20">
-        <div className="w-full flex items-center justify-evenly">
+        <header className="w-full flex items-center justify-evenly">
           <h1 className="md:text-3xl max-sm:text-2xl font-bold text-jordy">Projetos em que atuei</h1>
-          <Line2/>
-        </div>
+          <Line2 />
+        </header>
 
         <div className="md:w-[55rem] h-[50rem] flex justify-between">
           {/* Lista de Projetos */}
-          <div className="h-full w-60 overflow-auto flex flex-col">
+          <aside className="h-full w-60 overflow-auto flex flex-col">
             <UniqueProject
               onClick={() => selectProject(0)}
               projectTitle="Resend"
@@ -221,23 +168,18 @@ export default function Projects() {
               projectTitle="JumpVerso"
               selected={projectsSelection[4]}
             />
-          </div>
+          </aside>
 
           {/* Descrições do Projeto */}
-          <div className="w-[35rem] h-full flex flex-col gap-4 max-sm:hidden">
-            <div>
-              <div className="flex justify-start gap-4">
-                <h1 className="text-tea text-2xl font-bold">
-                  {selectDescription().function}
-                </h1>
-                <img src="../assets/Line3.svg" alt="Line Divider" />
-                <span className="text-tea text-2xl font-bold">
-                  {selectDescription().title}
-                </span>
-              </div>
-              <div className="flex justify-between align-baseline">
-                <p className="font-light text-jordy">{selectDescription().date}</p>
-              </div>
+          <section className="w-[35rem] h-full flex flex-col gap-4 max-sm:hidden">
+            <div className="flex justify-start gap-4">
+              <h2 className="text-tea text-2xl font-bold">{selectDescription().function}</h2>
+              <img src="../assets/Line3.svg" alt="Line Divider" />
+              <span className="text-tea text-2xl font-bold">{selectDescription().title}</span>
+            </div>
+
+            <div className="flex justify-between align-baseline">
+              <p className="font-light text-jordy">{selectDescription().date}</p>
             </div>
 
             <div className="flex flex-col gap-6 h-full">
@@ -248,16 +190,13 @@ export default function Projects() {
               <ProjectDescription description={selectDescription().task_five} />
             </div>
 
-            {/* Ícones de tecnologias (exemplo) */}
-            <div className="flex gap-40">
-              <div className="flex gap-4">
-                <img src={selectDescription().techs[1]} />
-                <img src={selectDescription().techs[2]} />
-                <img src={selectDescription().techs[3]} />
-                <img src={selectDescription().techs[4]} />
-              </div>
+            {/* Ícones de tecnologias */}
+            <div className="flex gap-4">
+              {selectDescription().techs.slice(1).map((tech, index) => (
+                <img key={index} src={tech} alt={`Tech ${index + 1}`} />
+              ))}
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </section>
