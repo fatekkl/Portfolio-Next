@@ -69,12 +69,12 @@ Para executar este projeto localmente, siga os passos abaixo:
 - [x] Melhorar interatividade nas telas, adicionando animações e fluidez
 - [x] Corrigir formatação dos textos
 - [x] Finalizar menu
+- [x] Dar deploy
 
 ### 🔧 Em Progresso
 
 - [ ] Tornar o portfólio completamente responsivo
 - [ ] Personalizar a barra de rolagem
-- [ ] Dar deploy
 - [ ] Formatar objeto semanticamente
 - [ ] Tornar todo o TSX com HTML semântico
 - [ ] Adicionar versão em inglês
