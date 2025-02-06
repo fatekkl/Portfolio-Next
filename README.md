@@ -29,7 +29,7 @@ Para executar este projeto localmente, siga os passos abaixo:
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/fatekkl/Portfolio-Next
    ```
 
 2. Instale as dependências:
