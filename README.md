@@ -70,18 +70,20 @@ Para executar este projeto localmente, siga os passos abaixo:
 - [x] Corrigir formatação dos textos
 - [x] Finalizar menu
 - [x] Dar deploy
+- [x] Arrumar linha embaixo do email
+- [x] Personalizar a barra de rolagem
+- [x] Tornar todo o TSX com HTML semântico
+
+
 
 ### 🔧 Em Progresso
 
 - [ ] Tornar o portfólio completamente responsivo
-- [ ] Personalizar a barra de rolagem
 - [ ] Formatar objeto semanticamente
-- [ ] Tornar todo o TSX com HTML semântico
 - [ ] Adicionar versão em inglês
 - [ ] Adicionar header para substituir menu (Versão Mobile)
 - [ ] Arrumar para telas médias(Ele buga a partir de 643 de width)
 - [ ] Lógica para abrir pop-up na seção de Projetos, quando selecionado
-- [ ] Arrumar linha embaixo do email
 
 ## 📡 Deploy
 
