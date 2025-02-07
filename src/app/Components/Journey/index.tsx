@@ -12,16 +12,16 @@ export default function Journey() {
 
             <main className="flex flex-col md:flex-row justify-around min-h-screen relative bg-jet p-8">
                 {/* Elementos decorativos */}
-                <div className="hidden md:block absolute left-2/4 top-[6rem] opacity-20">
+                <div className="hidden md:block absolute right-3/4 top-3/4 opacity-70">
                     <DotSquare />
                 </div>
-                <div className="hidden md:block absolute left-[50rem] opacity-10 top-[32rem]">
+                <div className="hidden md:block absolute left-3/4 opacity-30 top-1/4">
                     <DotSquare />
                 </div>
-                <div className="hidden md:block absolute left-[25rem] top-[50rem] opacity-10">
+                <div className="hidden md:block absolute left-1/4 top-1/3 opacity-30">
                     <DotSquare />
                 </div>
-                <div className="hidden md:block absolute left-[65rem] top-[48rem] opacity-70">
+                <div className="hidden md:block absolute right-1/4 top-1/2 opacity-30">
                     <DotSquare />
                 </div>
 
@@ -46,7 +46,7 @@ export default function Journey() {
                     </section>
                 </article>
 
-                <figure className="self-center w-96 h-auto max-lg:hidden">
+                <figure className="self-center w-96 h-auto max-lg:hidden z-50">
                     <img src="../../../assets/Storyset.svg" alt="Ilustração de jornada profissional" />
                 </figure>
             </main>
