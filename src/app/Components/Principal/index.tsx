@@ -16,13 +16,13 @@ export default function Principal() {
   return (
     <main id="principal" className="flex">
       {/* seção de apresentação */}
-      <section className="w-screen md:w-2/3 lg:w-2/3 h-auto bg-jet relative">
+      <section className="w-screen md:w-2/3 lg:w-2/3 h-auto bg-jet relative flex flex-col max-sm:gap-2 gap-8 max-sm:items-center">
         <header className="absolute ml-4 lg:ml-12 mt-8 max-sm:hidden">
           <Stair />
         </header>
 
-        <article className="w-full h-3/4 flex flex-col justify-end gap-6 max-sm:items-center max-sm:justify-center">
-          <h1 className="font-bold text-white ml-12 text text-xl lg:text-4xl leading-normal max-sm:text-center">
+        <article className="w-full h-3/4 flex flex-col justify-end gap-6 sm:justify-center sm:items-center md:items-start md:justify-end max-sm:items-center text-center max-sm:justify-center">
+          <h1 className="font-bold text-white ml-12 text text-xl lg:text-4xl leading-normal max-sm:text-center md:text-start">
             Olá,
             <br />
             Sou o Matheus 👋
@@ -30,7 +30,7 @@ export default function Principal() {
           <h2 className="font-bold ml-12 text-2xl text-jordy max-sm:text-center">
             Desenvolvedor Fullstack
           </h2>
-          <p className="lg:w-2/4 ml-12 md:w-2/4 text-xl text-white text-justify max-sm:w-8/12 max-sm:text-center">
+          <p className="lg:w-2/4 ml-12 md:w-2/4 text-xl text-white text-justify sm:text-center md:text-start sm:w-6/12 max-sm:w-8/12 max-sm:text-center">
             Sou um desenvolvedor curioso e apaixonado por tecnologia, conheça mais sobre minhas habilidades e projetos aqui.
           </p>
           <nav className="ml-12 flex gap-5" aria-label="links sociais">
@@ -45,9 +45,9 @@ export default function Principal() {
             </a>
           </nav>
         </article>
-        <div className="text-tea  mt-4 font-bold w-full h-fit flex flex-col items-center justify-center gap-4 text-xl tracking-[0.094rem]">
+        <div className="text-tea  mt-4 font-bold max-sm:w-1/2 w-full h-fit flex flex-col items-center justify-center gap-4 max-sm:text-xs text-xl tracking-[0.094rem]">
           <span className="text-wrap text-center">Solucione seus problemas com software.</span>
-          <div className="flex justify-between text-[1rem] font-normal text-wrap h-full gap-8 text-center">
+          <div className="flex justify-between text-xs font-normal text-wrap h-full max-sm:gap-4 gap-8 text-center mb-4">
             <span>Desenvolto com escalabilidade e performance.</span>
             <span>Trabalhei em projetos por todo o Brasil.</span>
 
@@ -55,14 +55,14 @@ export default function Principal() {
         </div>
       </section>
 
-      <figure className="absolute top-1/2 md:left-3/4 lg:left-2/3 transform -translate-y-1/2 -translate-x-1/2 z-40 max-sm:hidden md:w-[20rem]">
+      <figure className="absolute top-1/2 sm:right-1/4 left-2/3 transform -translate-y-1/2 -translate-x-1/2 z-40 max-md:hidden md:w-[14rem] lg:w-[20rem]">
         <img src="../../../assets/Eu.png" alt="foto de matheus" />
       </figure>
 
       {/* seção lateral */}
-      <aside className="bg-jordy max-sm:w-1/6 md:w-1/3 lg:w-1/3 flex flex-col h-screen justify-end">
+      <aside className="bg-jordy sm:w-1/6 md:w-1/3 lg:w-1/3 flex flex-col h-screen justify-end">
         <footer className="w-full justify-end hidden lg:flex">
-          <Line/>
+          <Line />
         </footer>
         <div onClick={(event) => copy(event, "text-tea")} className="text-jet font-quantico font-bold absolute top-1/2 -rotate-90 -right-20 cursor-pointer transition-all duration-500 ease-in-out">
           mathtml.1105@gmail.com
