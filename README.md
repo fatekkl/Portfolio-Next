@@ -84,6 +84,8 @@ Para executar este projeto localmente, siga os passos abaixo:
 - [ ] Adicionar header para substituir menu (Versão Mobile)
 - [ ] Arrumar para telas médias(Ele buga a partir de 643 de width)
 - [ ] Lógica para abrir pop-up na seção de Projetos, quando selecionado
+- [ ] Fixar parte de projetos para dispositivos entre 640 e 768
+- [ ] Items escapando da tela em certos tamanhos, testar corretamente e ajeitar dimensoes
 
 ## 📡 Deploy
 
