@@ -5,11 +5,12 @@ import Stair from "../Stair";
 export default function Journey() {
     return (
         <>
-            <aside className="absolute z-10 ml-4 md:ml-12 mt-[50rem] -rotate-90 max-sm:hidden">
+            <aside className="fixed bottom-0 left-0 mb-4 ml-4 md:ml-12 z-50 -rotate-90 max-lg:hidden">
                 <Stair />
             </aside>
 
-            <main className="flex flex-col md:flex-row justify-evenly min-h-screen relative bg-jet p-8">
+
+            <main className="flex flex-col md:flex-row justify-around min-h-screen relative bg-jet p-8">
                 {/* Elementos decorativos */}
                 <div className="hidden md:block absolute left-2/4 top-[6rem] opacity-20">
                     <DotSquare />
@@ -23,7 +24,7 @@ export default function Journey() {
                 <div className="hidden md:block absolute left-[65rem] top-[48rem] opacity-70">
                     <DotSquare />
                 </div>
-                
+
                 <article className="md:ml-12 mt-16 max-sm:w-full md:w-1/2 flex flex-col gap-8 tracking-[0.094rem]">
                     <section className="flex flex-col gap-2 md:text-center lg:text-justify max-sm:w-10/12">
                         <h1 className="text-tea text-3xl font-bold">Com o que trabalho?</h1>
@@ -44,8 +45,8 @@ export default function Journey() {
                         </p>
                     </section>
                 </article>
-                
-                <figure className="self-center max-w-full h-auto max-lg:hidden">
+
+                <figure className="self-center w-96 h-auto max-lg:hidden">
                     <img src="../../../assets/Storyset.svg" alt="Ilustração de jornada profissional" />
                 </figure>
             </main>
