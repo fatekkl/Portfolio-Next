@@ -24,27 +24,28 @@ export default function Journey() {
                     <DotSquare />
                 </div>
                 
-                <article className="md:ml-12 mt-16 max-sm:w-full md:w-1/2 flex flex-col gap-8 tracking-[0.094rem] max-sm:hidden">
-                    <section className="flex flex-col gap-2 max-sm:w-10/12">
+                <article className="md:ml-12 mt-16 max-sm:w-full md:w-1/2 flex flex-col gap-8 tracking-[0.094rem]">
+                    <section className="flex flex-col gap-2 md:text-center lg:text-justify max-sm:w-10/12">
                         <h1 className="text-tea text-3xl font-bold">Com o que trabalho?</h1>
-                        <p className="font-normal text-white max-sm:text-center md:text-justify max-sm:text-xl md:text-2xl h-auto">
+                        <p className="font-normal text-white max-sm:text-center  max-sm:text-xl md:text-2xl h-auto">
                             Ao longo dos anos já interagi e trabalhei com diversas tecnologias do mercado, como JavaScript, Kotlin, PHP, Java, Python, .Net, entre outros. Como resultado, tive a oportunidade de trabalhar em diversos projetos pelo Brasil inteiro.
                         </p>
                     </section>
-                    <section className="flex flex-col gap-2">
-                        <h2 className="text-tea text-3xl font-bold">O que fiz nesses projetos?</h2>
-                        <p className="font-normal text-white max-sm:text-center md:text-justify max-sm:text-xl md:text-2xl max-w-full h-auto">
+                    <section className="flex flex-col gap-2 md:text-center lg:text-justify">
+                        <h2 className="text-tea  text-3xl font-bold">O que fiz nesses projetos?</h2>
+                        <p className="font-normal text-white max-sm:text-center  max-sm:text-xl md:text-2xl max-w-full h-auto">
                             Já trabalhei nos mais diversos tipos de projetos, como integrações, configuração e hospedagem de servidores, automações de estoque, entre outros. Com isso, adquiri experiência para me adaptar a diversas situações e trabalhar de diferentes formas e tecnologias.
                         </p>
                     </section>
-                    <section className="flex flex-col gap-2">
-                        <h2 className="text-tea text-3xl font-bold">O que busco agora?</h2>
-                        <p className="font-normal text-white max-sm:text-center md:text-justify max-sm:text-xl md:text-2xl max-w-70 h-auto">
+                    <section className="flex flex-col gap-2 md:text-center lg:text-justify">
+                        <h2 className="text-tea  text-3xl font-bold">O que busco agora?</h2>
+                        <p className="font-normal text-white max-sm:text-center  max-sm:text-xl md:text-2xl max-w-70 h-auto">
                             Atualmente, estou em busca da minha primeira oportunidade de emprego em tempo integral e me preparo para ingressar no ensino superior. Paralelamente, sigo aprimorando meus conhecimentos em software escalável, estrutura de dados e UI/UX.
                         </p>
                     </section>
                 </article>
-                <figure className="self-center max-w-full h-auto max-sm:hidden">
+                
+                <figure className="self-center max-w-full h-auto max-lg:hidden">
                     <img src="../../../assets/Storyset.svg" alt="Ilustração de jornada profissional" />
                 </figure>
             </main>
