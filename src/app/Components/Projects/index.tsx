@@ -114,11 +114,7 @@ export default function Projects() {
   };
 
   return (
-    <section
-      id="projects"
-      style={{ backgroundImage: "url('../assets/Background.png')" }}
-      className="bg-jet min-h-screen bg-no-repeat bg-bottom bg-contain flex justify-center relative"
-    >
+    <>
       {/* Elementos decorativos */}
       <div className="absolute max-sm:hidden top-1/4 right-3/4 opacity-30">
         <DotSquare />
@@ -134,71 +130,79 @@ export default function Projects() {
       </div>
 
       {/* Conteúdo principal */}
-      <div className="w-[50rem] h-[35rem] flex flex-col items-center gap-10 mt-20">
-        <header className="w-full flex items-center justify-evenly">
-          <h1 className="md:text-3xl max-sm:text-2xl font-bold text-jordy">Projetos em que atuei</h1>
-          <Line2 />
-        </header>
+      <section
+        id="projects"
+        style={{ backgroundImage: "url('../assets/Background.png')" }}
+        className="bg-jet md:min-h-[120vh] bg-no-repeat bg-bottom bg-contain flex justify-center relative"
+      >
+        <div className="w-[50rem] h-[35rem] flex flex-col items-center gap-10 mt-20">
+          <header className="w-full flex items-center justify-evenly">
+            <h1 className="md:text-3xl max-sm:text-2xl font-bold text-jordy">Projetos em que atuei</h1>
+            <Line2 />
+          </header>
 
-        <div className="md:w-[55rem] h-[50rem] flex justify-between">
-          {/* Lista de Projetos */}
-          <aside className="h-full w-60 overflow-auto flex flex-col">
-            <UniqueProject
-              onClick={() => selectProject(0)}
-              projectTitle="Resend"
-              selected={projectsSelection[0]}
-            />
-            <UniqueProject
-              onClick={() => selectProject(1)}
-              projectTitle="Ozon Solution"
-              selected={projectsSelection[1]}
-            />
-            <UniqueProject
-              onClick={() => selectProject(2)}
-              projectTitle="Bling"
-              selected={projectsSelection[2]}
-            />
-            <UniqueProject
-              onClick={() => selectProject(3)}
-              projectTitle="Aideia"
-              selected={projectsSelection[3]}
-            />
-            <UniqueProject
-              onClick={() => selectProject(4)}
-              projectTitle="JumpVerso"
-              selected={projectsSelection[4]}
-            />
-          </aside>
+          <div className="md:w-[55rem] h-[50rem] flex justify-between">
+            {/* Lista de Projetos */}
+            <aside className="h-full w-60 overflow-auto flex flex-col">
+              <UniqueProject
+                onClick={() => selectProject(0)}
+                projectTitle="Resend"
+                selected={projectsSelection[0]}
+              />
+              <UniqueProject
+                onClick={() => selectProject(1)}
+                projectTitle="Ozon Solution"
+                selected={projectsSelection[1]}
+              />
+              <UniqueProject
+                onClick={() => selectProject(2)}
+                projectTitle="Bling"
+                selected={projectsSelection[2]}
+              />
+              <UniqueProject
+                onClick={() => selectProject(3)}
+                projectTitle="Aideia"
+                selected={projectsSelection[3]}
+              />
+              <UniqueProject
+                onClick={() => selectProject(4)}
+                projectTitle="JumpVerso"
+                selected={projectsSelection[4]}
+              />
+            </aside>
 
-          {/* Descrições do Projeto */}
-          <section className="w-[35rem] h-full flex flex-col gap-4 max-sm:hidden">
-            <div className="flex justify-start gap-4">
-              <h2 className="text-tea text-2xl font-bold">{selectDescription().function}</h2>
-              <img src="../assets/Line3.svg" alt="Line Divider" />
-              <span className="text-tea text-2xl font-bold">{selectDescription().title}</span>
-            </div>
+            {/* Descrições do Projeto */}
+            <section className="w-[35rem] h-full flex flex-col gap-4 max-sm:hidden">
+              <div className="flex justify-start gap-4">
+                <h2 className="text-tea text-2xl font-bold">{selectDescription().function}</h2>
+                <img src="../assets/Line3.svg" alt="Line Divider" />
+                <span className="text-tea text-2xl font-bold">{selectDescription().title}</span>
+              </div>
 
-            <div className="flex justify-between align-baseline">
-              <p className="font-light text-jordy">{selectDescription().date}</p>
-            </div>
+              <div className="flex justify-between align-baseline">
+                <p className="font-light text-jordy">{selectDescription().date}</p>
+              </div>
 
-            <div className="flex flex-col gap-6 h-full">
-              <ProjectDescription description={selectDescription().task_one} />
-              <ProjectDescription description={selectDescription().task_two} />
-              <ProjectDescription description={selectDescription().task_three} />
-              <ProjectDescription description={selectDescription().task_four} />
-              <ProjectDescription description={selectDescription().task_five} />
-            </div>
+              <div className="flex flex-col gap-6 h-full">
+                <ProjectDescription description={selectDescription().task_one} />
+                <ProjectDescription description={selectDescription().task_two} />
+                <ProjectDescription description={selectDescription().task_three} />
+                <ProjectDescription description={selectDescription().task_four} />
+                <ProjectDescription description={selectDescription().task_five} />
+              </div>
 
-            {/* Ícones de tecnologias */}
-            <div className="flex gap-4">
-              {selectDescription().techs.slice(1).map((tech, index) => (
-                <img key={index} src={tech} alt={`Tech ${index + 1}`} />
-              ))}
-            </div>
-          </section>
+              {/* Ícones de tecnologias */}
+              <div className="flex gap-4">
+                {selectDescription().techs.slice(1).map((tech, index) => (
+                  <img key={index} src={tech} alt={`Tech ${index + 1}`} />
+                ))}
+              </div>
+            </section>
+          </div>
         </div>
-      </div>
-    </section>
+
+      </section>
+    </>
+
   );
 }
