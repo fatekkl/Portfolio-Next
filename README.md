@@ -73,6 +73,7 @@ Para executar este projeto localmente, siga os passos abaixo:
 - [x] Arrumar linha embaixo do email
 - [x] Personalizar a barra de rolagem
 - [x] Tornar todo o TSX com HTML semântico
+- [x] Items escapando da tela em certos tamanhos, testar corretamente e ajeitar dimensoes
 
 
 
@@ -85,7 +86,7 @@ Para executar este projeto localmente, siga os passos abaixo:
 - [ ] Arrumar para telas médias(Ele buga a partir de 643 de width)
 - [ ] Lógica para abrir pop-up na seção de Projetos, quando selecionado
 - [ ] Fixar parte de projetos para dispositivos entre 640 e 768
-- [ ] Items escapando da tela em certos tamanhos, testar corretamente e ajeitar dimensoes
+- [ ] Arrumar tela de contato, todas as dimensoes
 
 ## 📡 Deploy
 
