@@ -7,10 +7,10 @@ interface ProjectDescriptionProps {
 
 export default function ProjectDescription({ description }: ProjectDescriptionProps) {
     return (
-        <div className="flex gap-4 align-baseline items-baseline">
+        <div className="flex gap-2 align-baseline items-baseline">
             <MiniSquare/>
-            <div className="flex w-[30rem]">
-                <p className="font-semibold text-[1rem] text-white">{description}</p>
+            <div className="flex">
+                <p className="font-semibold  text-white">{description}</p>
             </div>
         </div>
 

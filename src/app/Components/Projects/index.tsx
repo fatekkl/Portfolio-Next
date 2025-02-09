@@ -133,15 +133,15 @@ export default function Projects() {
       <section
         id="projects"
         style={{ backgroundImage: "url('../assets/Background.png')" }}
-        className="bg-jet md:min-h-[120vh] bg-no-repeat bg-bottom bg-contain flex justify-center relative"
+        className="bg-jet sm:min-h-[130vh] bg-no-repeat bg-bottom bg-contain flex justify-center relative"
       >
-        <div className="w-[50rem] h-[35rem] flex flex-col items-center gap-10 mt-20">
+        <div className="w-[50rem] bg-whie h-[35rem] flex flex-col items-center gap-6 mt-20">
           <header className="w-full flex items-center justify-evenly">
-            <h1 className="md:text-3xl max-sm:text-2xl font-bold text-jordy">Projetos em que atuei</h1>
+            <h1 className="lg:text-3xl md:text-3xl max-sm:text-2xl font-bold text-jordy">Projetos em que atuei</h1>
             <Line2 />
           </header>
 
-          <div className="md:w-[55rem] h-[50rem] flex justify-between">
+          <div className=" flex justify-between gap-8">
             {/* Lista de Projetos */}
             <aside className="h-full w-60 overflow-auto flex flex-col">
               <UniqueProject
@@ -172,8 +172,8 @@ export default function Projects() {
             </aside>
 
             {/* Descrições do Projeto */}
-            <section className="w-[35rem] h-full flex flex-col gap-4 max-sm:hidden">
-              <div className="flex justify-start gap-4">
+            <section className="w-full h-full flex flex-col gap-4 max-sm:hidden">
+              <div className="flex flex-wrap items-center gap-4">
                 <h2 className="text-tea text-2xl font-bold">{selectDescription().function}</h2>
                 <img src="../assets/Line3.svg" alt="Line Divider" />
                 <span className="text-tea text-2xl font-bold">{selectDescription().title}</span>
