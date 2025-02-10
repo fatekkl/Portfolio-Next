@@ -136,12 +136,12 @@ export default function Projects() {
         className="bg-jet min-h-[120vh] bg-no-repeat bg-bottom bg-contain flex justify-center relative"
       >
         <div className="w-[50rem] h-[35rem] max-lg:p-20 lg:p-0 flex flex-col items-center gap-6 mt-20">
-          <header className="w-full flex items-center justify-evenly">
+          <header className="w-full flex items-center justify-center gap-8">
             <h1 className="text-3xl max-sm:text-2xl font-bold text-jordy">Projetos em que atuei</h1>
             <Line2 />
           </header>
 
-          <div className=" flex justify-between gap-8">
+          <div className="flex justify-between gap-8">
             {/* Lista de Projetos */}
             <aside className="h-full w-60 overflow-auto flex flex-col">
               <UniqueProject
@@ -172,7 +172,7 @@ export default function Projects() {
             </aside>
 
             {/* Descrições do Projeto */}
-            <section className="w-full h-full flex flex-col gap-4">
+            <section className="w-full h-full flex flex-col gap-4 max-md:hidden">
               <div className="flex flex-wrap items-center max-sm:justify-center max-sm:flex-col gap-4">
                 <h2 className="text-tea max-sm:text-center text-2xl font-bold">{selectDescription().function}</h2>
                 <img src="../assets/Line3.svg" alt="Line Divider" />
