@@ -133,11 +133,11 @@ export default function Projects() {
       <section
         id="projects"
         style={{ backgroundImage: "url('../assets/Background.png')" }}
-        className="bg-jet sm:min-h-[130vh] bg-no-repeat bg-bottom bg-contain flex justify-center relative"
+        className="bg-jet min-h-[120vh] bg-no-repeat bg-bottom bg-contain flex justify-center relative"
       >
-        <div className="w-[50rem] bg-whie h-[35rem] flex flex-col items-center gap-6 mt-20">
+        <div className="w-[50rem] h-[35rem] max-lg:p-20 lg:p-0 flex flex-col items-center gap-6 mt-20">
           <header className="w-full flex items-center justify-evenly">
-            <h1 className="lg:text-3xl md:text-3xl max-sm:text-2xl font-bold text-jordy">Projetos em que atuei</h1>
+            <h1 className="text-3xl max-sm:text-2xl font-bold text-jordy">Projetos em que atuei</h1>
             <Line2 />
           </header>
 
@@ -172,9 +172,9 @@ export default function Projects() {
             </aside>
 
             {/* Descrições do Projeto */}
-            <section className="w-full h-full flex flex-col gap-4 max-sm:hidden">
-              <div className="flex flex-wrap items-center gap-4">
-                <h2 className="text-tea text-2xl font-bold">{selectDescription().function}</h2>
+            <section className="w-full h-full flex flex-col gap-4">
+              <div className="flex flex-wrap items-center max-sm:justify-center max-sm:flex-col gap-4">
+                <h2 className="text-tea max-sm:text-center text-2xl font-bold">{selectDescription().function}</h2>
                 <img src="../assets/Line3.svg" alt="Line Divider" />
                 <span className="text-tea text-2xl font-bold">{selectDescription().title}</span>
               </div>
