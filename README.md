@@ -74,19 +74,22 @@ Para executar este projeto localmente, siga os passos abaixo:
 - [x] Personalizar a barra de rolagem
 - [x] Tornar todo o TSX com HTML semântico
 - [x] Items escapando da tela em certos tamanhos, testar corretamente e ajeitar dimensoes
+- [x] Arrumar para telas médias(Ele buga a partir de 643 de width)
+- [x] Arrumar tela de contato, todas as dimensoes
+- [x] Fixar parte de projetos para dispositivos entre 640 e 768
+- [x] Tornar o portfólio completamente responsivo(MVP)
+
+
+
 
 
 
 ### 🔧 Em Progresso
 
-- [ ] Tornar o portfólio completamente responsivo
 - [ ] Formatar objeto semanticamente
 - [ ] Adicionar versão em inglês
 - [ ] Adicionar header para substituir menu (Versão Mobile)
-- [ ] Arrumar para telas médias(Ele buga a partir de 643 de width)
 - [ ] Lógica para abrir pop-up na seção de Projetos, quando selecionado
-- [ ] Fixar parte de projetos para dispositivos entre 640 e 768
-- [ ] Arrumar tela de contato, todas as dimensoes
 
 ## 📡 Deploy
 
