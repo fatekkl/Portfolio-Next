@@ -1,4 +1,4 @@
-export default function DotSquare({color = ""}) {
+export default function DotSquare({color = "", classname = ""}) {
     
     if(!color){
         color = "#C7FFDA    "
@@ -6,6 +6,7 @@ export default function DotSquare({color = ""}) {
 
 
     return (
+        <div className={classname}>
         <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_43_1157)">
                 <circle cx="1" cy="1" r="1" fill={color} />
@@ -184,6 +185,6 @@ export default function DotSquare({color = ""}) {
                 </clipPath>
             </defs>
         </svg>
-
+        </div>
     )
 }

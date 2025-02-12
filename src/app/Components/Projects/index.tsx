@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import DotSquare from "../DotSquare";
 import Line2 from "../Line2";
 import ProjectDescription from "../ProjectDescription";
 import UniqueProject from "../UniqueProject";
@@ -115,20 +114,6 @@ export default function Projects() {
 
   return (
     <>
-      {/* Elementos decorativos */}
-      <div className="absolute max-sm:hidden top-1/4 right-3/4 opacity-30">
-        <DotSquare />
-      </div>
-      <div className="absolute max-sm:hidden bottom-1/4 left-1/4 opacity-30">
-        <DotSquare />
-      </div>
-      <div className="absolute max-sm:hidden top-1/4 right-1/4 opacity-40">
-        <DotSquare color="#9AC4F8" />
-      </div>
-      <div className="absolute max-sm:hidden bottom-1/4 left-3/4 opacity-40">
-        <DotSquare color="#9AC4F8" />
-      </div>
-
       {/* Conteúdo principal */}
       <section
         id="projects"

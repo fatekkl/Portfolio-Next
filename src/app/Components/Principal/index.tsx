@@ -1,6 +1,5 @@
 "use client"
 
-import DotSquare from "../DotSquare";
 import Line from "../Line";
 import Stair from "../Stair";
 import Link from "next/link";
@@ -14,7 +13,7 @@ export default function Principal() {
   }
 
   return (
-    <main id="principal" className="flex">
+    <main id="principal" className="flex relative">
       {/* seção de apresentação */}
       <section className="w-screen md:w-2/3 lg:w-2/3 h-auto bg-jet relative flex flex-col max-sm:gap-2 gap-8 max-sm:items-center">
         <header className="absolute ml-4 lg:ml-12 mt-8 max-sm:hidden">

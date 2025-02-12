@@ -1,5 +1,3 @@
-import DotSquare from "../DotSquare";
-import Menu from "../Menu";
 import Stair from "../Stair";
 
 export default function Journey() {
@@ -11,20 +9,7 @@ export default function Journey() {
 
 
             <main className="flex flex-col md:flex-row justify-around min-h-screen relative bg-jet p-8">
-                {/* Elementos decorativos */}
-                <div className="hidden md:block absolute right-3/4 top-3/4 opacity-70">
-                    <DotSquare />
-                </div>
-                <div className="hidden md:block absolute left-3/4 opacity-30 top-1/4">
-                    <DotSquare />
-                </div>
-                <div className="hidden md:block absolute left-1/4 top-1/3 opacity-30">
-                    <DotSquare />
-                </div>
-                <div className="hidden md:block absolute right-1/4 top-1/2 opacity-30">
-                    <DotSquare />
-                </div>
-
+                
                 <article className="md:ml-12 mt-16 max-sm:w-full md:w-1/2 flex flex-col gap-8 tracking-[0.094rem]">
                     <section className="flex flex-col gap-2 md:text-center lg:text-justify">
                         <h2 className="text-tea max-sm:text-center text-3xl font-bold">Com o que trabalho?</h2>
