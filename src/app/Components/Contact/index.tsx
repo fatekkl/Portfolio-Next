@@ -4,7 +4,7 @@ import ContactButton from "../ContactButton";
 
 export default function Contact() {
   return (
-    <section className="h-[50%] w-auto bg-jordy flex flex-col items-center max-md:gap-2 gap-6">
+    <section className="h-50vh w-auto bg-jordy flex flex-col items-center max-md:gap-2 gap-6">
       <header className="max-md:text-2xl text-3xl flex flex-col gap-2">
         <h1 className="font-bold text-jet text-center">
           Mande uma mensagem!

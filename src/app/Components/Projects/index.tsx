@@ -118,7 +118,7 @@ export default function Projects() {
       <section
         id="projects"
         style={{ backgroundImage: "url('../assets/Background.png')" }}
-        className="bg-jet min-h-[120vh] bg-no-repeat bg-bottom bg-contain flex justify-center relative"
+        className="bg-jet lg:min-h-[100vh] min-h-[120vh] bg-no-repeat bg-bottom bg-contain flex justify-center relative"
       >
         <div className="w-[50rem] h-[35rem] max-lg:p-20 lg:p-0 flex flex-col items-center gap-6 mt-20">
           <header className="w-full flex items-center justify-center gap-8">
