@@ -200,7 +200,7 @@ export default function Projects() {
             </section>
           </div>
 
-          <div className={`${isMobile ? "flex flex-col items-center justify-around w-full h-full" : "max-md:hidden"} `}>
+          <div className={`${isMobile ? "flex flex-col items-center justify-around w-full h-full" : "hidden"} `}>
                 <MobileProject projectTitle="Resend"/>
                 <MobileProject projectTitle="Ozon Solution"/>
                 <MobileProject projectTitle="Bling"/>
