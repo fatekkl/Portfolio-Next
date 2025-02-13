@@ -26,8 +26,8 @@ export default function DotSquareGrid() {
 
             <DotSquare color="#9AC4F8" className="absolute hidden md:block sm:hidden top-[202vh] right-[8vw] opacity-70 transform -translate-x-1/2 -translate-y-1/2" />
             <DotSquare color="#9AC4F8" className="absolute hidden md:block sm:hidden bottom-[62vh] left-[16vw] opacity-70 transform -translate-x-1/2 -translate-y-1/2" />
-            <DotSquare className="absolute hidden md:hidden sm:hidden top-[202vh] left-[16vw] opacity-70 transform -translate-x-1/2 -translate-y-1/2" />
-            <DotSquare className="absolute hidden md:hidden sm:hidden bottom-[62vh] right-[8vw] opacity-70 transform -translate-x-1/2 -translate-y-1/2" />
+            <DotSquare className="absolute block max-lg:hidden top-[202vh] left-[16vw] opacity-70 transform -translate-x-1/2 -translate-y-1/2" />
+            <DotSquare className="absolute block max-lg:hidden bottom-[62vh] right-[8vw] opacity-70 transform -translate-x-1/2 -translate-y-1/2" />
 
 
 

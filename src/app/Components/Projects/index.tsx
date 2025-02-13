@@ -128,7 +128,7 @@ export default function Projects() {
 
           <div className="flex justify-between gap-8">
             {/* Lista de Projetos */}
-            <aside className="h-full w-60 overflow-auto flex flex-col">
+            <aside className="h-full md:w-60 max-sm:w-40 overflow-auto flex flex-col">
               <UniqueProject
                 onClick={() => selectProject(0)}
                 projectTitle="Resend"
