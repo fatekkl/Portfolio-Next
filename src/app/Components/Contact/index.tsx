@@ -14,7 +14,7 @@ export default function Contact() {
         </h2>
       </header>
 
-      <div className="flex max-sm:scale-90 flex-col lg:gap-8">
+      <div className="flex max-sm:scale-90 flex-col md:gap-4 lg:gap-8">
         <a
           href="mailto:mathtml.1105@gmail.com?body=Ol%C3%A1,%20vimos%20seu%20portf%C3%B3lio..."
           target="_blank"
