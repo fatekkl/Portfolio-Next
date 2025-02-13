@@ -78,7 +78,7 @@ Para executar este projeto localmente, siga os passos abaixo:
 - [x] Arrumar tela de contato, todas as dimensoes
 - [x] Fixar parte de projetos para dispositivos entre 640 e 768
 - [x] Tornar o portfólio completamente responsivo(MVP)
-- [ ] Arrumar gris do background
+- [ ] Arrumar grid do background
 
 
 
