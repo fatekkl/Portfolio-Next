@@ -64,7 +64,7 @@ export default function Principal() {
           <Line />
         </footer>
         <div onClick={(event) => copy(event, "text-tea")} className="text-jet font-quantico font-bold absolute top-1/2 -rotate-90 -right-20 cursor-pointer transition-all duration-500 ease-in-out">
-          mathtml.1105@gmail.com
+          matheus.olv.dev@gmail.com
         </div>
       </aside>
     </main>
