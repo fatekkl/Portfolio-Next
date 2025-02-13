@@ -1,12 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Line2 from "../Line2";
 import ProjectDescription from "../ProjectDescription";
 import UniqueProject from "../UniqueProject";
+import MobileProject from "../MobileProject";
 
 export default function Projects() {
   const [projectsSelection, setProjectsSelection] = useState([true, false, false, false, false]);
+  const [isMobile, setIsMobile] = useState(false)
 
   const selectProject = (x: number) => {
     setProjectsSelection((prev) => {
@@ -112,6 +114,19 @@ export default function Projects() {
     return description;
   };
 
+
+  const checkScreenSize = () => {
+    setIsMobile(window.innerWidth < 768)
+  }
+
+  useEffect(() => {
+    checkScreenSize()
+
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, [])
+
   return (
     <>
       {/* Conteúdo principal */}
@@ -120,13 +135,13 @@ export default function Projects() {
         style={{ backgroundImage: "url('../assets/Background.png')" }}
         className="bg-jet lg:min-h-[100vh] min-h-[120vh] bg-no-repeat bg-bottom bg-contain flex justify-center relative"
       >
-        <div className="w-[50rem] h-[35rem] max-lg:p-20 lg:p-0 flex flex-col items-center gap-6 mt-20">
+        <div className="w-[50rem] h-[55rem] max-lg:p-20 lg:p-0 flex flex-col items-center gap-6 mt-20">
           <header className="w-full flex items-center justify-center gap-8">
             <h1 className="text-3xl max-sm:text-2xl font-bold text-jordy">Projetos em que atuei</h1>
             <Line2 />
           </header>
 
-          <div className="flex justify-between gap-8">
+          <div className={`justify-between gap-8 ${isMobile ? "max-md:hidden" : "flex"}`}>
             {/* Lista de Projetos */}
             <aside className="h-full md:w-60 max-sm:w-40 overflow-auto flex flex-col">
               <UniqueProject
@@ -157,7 +172,7 @@ export default function Projects() {
             </aside>
 
             {/* Descrições do Projeto */}
-            <section className="w-full h-full flex flex-col gap-4 max-md:hidden">
+            <section className="w-full h-full flex flex-col gap-4">
               <div className="flex flex-wrap items-center max-sm:justify-center max-sm:flex-col gap-4">
                 <h2 className="text-tea max-sm:text-center text-2xl font-bold">{selectDescription().function}</h2>
                 <img src="../assets/Line3.svg" alt="Line Divider" />
@@ -184,6 +199,16 @@ export default function Projects() {
               </div>
             </section>
           </div>
+
+          <div className={`${isMobile ? "flex flex-col items-center justify-around w-full h-full" : "max-md:hidden"} `}>
+                <MobileProject projectTitle="Resend"/>
+                <MobileProject projectTitle="Ozon Solution"/>
+                <MobileProject projectTitle="Bling"/>
+                <MobileProject projectTitle="Aideia"/>
+                <MobileProject projectTitle="JumpVerso"/>
+
+          </div>
+
         </div>
 
       </section>
