@@ -3,7 +3,7 @@ import Stair from "../Stair";
 export default function Journey() {
     return (
         <>
-            <aside className="fixed bottom-0 left-0 mb-4 ml-4 md:ml-12 z-50 -rotate-90 max-lg:hidden">
+            <aside className="fixed bottom-0 left-0 mb-4 ml-4 md:ml-12 z-40 -rotate-90 max-lg:hidden">
                 <Stair />
             </aside>
 
@@ -31,7 +31,7 @@ export default function Journey() {
                     </section>
                 </article>
 
-                <figure className="self-center w-96 h-auto max-lg:hidden z-50">
+                <figure className="self-center w-96 h-auto max-lg:hidden z-40">
                     <img src="../../../assets/Storyset.svg" alt="Ilustração de jornada profissional" />
                 </figure>
             </main>

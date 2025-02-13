@@ -16,14 +16,14 @@ export default function Contact() {
 
       <div className="flex max-sm:scale-90 flex-col md:gap-4 lg:gap-8">
         <a
-          href="mailto:mathtml.1105@gmail.com?body=Ol%C3%A1,%20vimos%20seu%20portf%C3%B3lio..."
+          href="mailto:matheus.olv.dev@gmail.com?body=Ol%C3%A1,%20vimos%20seu%20portf%C3%B3lio..."
           target="_blank"
           rel="noopener noreferrer"
           className="max-md:scale-75 w-96 h-20 bg-tea rounded-2xl flex items-center text-jet font-bold text-xl justify-start transition-all duration-300 ease-in-out hover:cursor-pointer hover:scale-110 max-sm:scale-75 max-sm:hover:scale-90"
         >
           <ContactButton path="../../../assets/email.png" />
           <div className="w-full h-full flex items-center justify-center">
-            <span>mathtml.1105@gmail.com</span>
+            <span>matheus.olv.dev</span>
           </div>
         </a>
         <a
