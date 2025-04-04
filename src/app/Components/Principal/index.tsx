@@ -44,7 +44,7 @@ export default function Principal() {
   return (
     <main id="principal" className="flex relative">
       {/* Seção de apresentação */}
-      <section className="w-screen md:w-2/3 lg:w-2/3 h-auto bg-jet relative flex flex-col max-sm:gap-2 gap-8 max-sm:items-center">
+      <section className="w-full md:w-2/3 lg:w-2/3 h-auto bg-jet relative flex flex-col max-sm:gap-2 gap-8 max-sm:items-center">
         <header className="absolute ml-4 lg:ml-12 mt-8 max-sm:hidden">
           <Stair />
         </header>
@@ -132,12 +132,6 @@ export default function Principal() {
         <footer className="w-full justify-end hidden lg:flex">
           <Line />
         </footer>
-        <div
-          onClick={(event) => handleCopy(event, "text-tea")}
-          className="text-violet z-50 font-quantico  fixed bottom-28 -rotate-90 -right-14 cursor-pointer transition-all duration-500 ease-in-out"
-        >
-          matheus.olv.dev@gmail.com
-        </div>
       </aside>
     </main>
   );
