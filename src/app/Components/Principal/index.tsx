@@ -4,42 +4,10 @@ import Line from "../Line";
 import Stair from "../Stair";
 import Link from "next/link";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export default function Principal() {
-  const [color, setColor] = useState("#343330")
 
-
-  const handleCopy = (
-    event: React.MouseEvent<HTMLDivElement>,
-    colorClass: string
-  ): void => {
-    const { currentTarget } = event;
-    navigator.clipboard.writeText(currentTarget.innerText);
-    currentTarget.classList.replace("text-violet", colorClass);
-    currentTarget.classList.add("scale-105")
-    setTimeout(() => currentTarget.classList.replace(colorClass, "text-violet"), 700);
-    setTimeout(() => currentTarget.classList.remove("scale-105"), 700);
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-
-      if (scrollPosition < 840) {
-        setColor("#343330");
-      } else {
-        setColor("#9AC4F8");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Remove o listener ao desmontar o componente
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <main id="principal" className="flex relative">

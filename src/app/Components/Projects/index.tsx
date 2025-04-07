@@ -206,7 +206,6 @@ export default function Projects() {
                 <MobileProject projectTitle="Bling"/>
                 <MobileProject projectTitle="Aideia"/>
                 <MobileProject projectTitle="JumpVerso"/>
-
           </div>
 
         </div>
