@@ -1,0 +1,102 @@
+{
+    "menu": {
+      "home": "Home",
+      "projects": "Projects",
+      "resume": "Resume",
+      "sayHello": "Say Hello"
+    },
+    "mobileHeader": {},
+    "main": {
+      "title": "Hi, I'm Matheus 👋",
+      "role": "Fullstack Developer",
+      "description": "I'm a curious and passionate developer about technology, get to know more about my skills and projects here.",
+      "solveTitle": "Solve your problems with software.",
+      "solveDescription": {
+        "scalability": "Developed with scalability and performance.",
+        "projects": "I have worked on projects all over Brazil."
+      }
+    },
+    "journey": {
+      "article_one": {
+        "article_title": "What do I work with?",
+        "article_description": "Over the years I have interacted and worked with various market technologies such as JavaScript, Kotlin, PHP, Java, Python, .Net, among others. As a result, I had the opportunity to work on several projects throughout Brazil."
+      },
+      "article_two": {
+        "article_title": "What have I done in these projects?",
+        "article_description": "I have worked on various types of projects, such as integrations, server configuration and hosting, stock automation, among others. With that, I gained experience to adapt to various situations and work with different approaches and technologies."
+      },
+      "article_three": {
+        "article_title": "What am I looking for now?",
+        "article_description": "Currently, I am looking for my first full-time job opportunity and preparing to enter higher education. In parallel, I continue to improve my knowledge in scalable software, data structures, and UI/UX."
+      }
+    },
+    "projects": {
+      "title": "Projects I've worked on",
+      "project_one": {
+        "title": "Resend",
+        "role": "Fullstack Developer",
+        "date": "June 2024",
+        "responsabilities": [
+          "Configured a complete Linux (Ubuntu) server ensuring security and stability for email sending.",
+          "Implemented an automated routine (cron) for scheduled email dispatches.",
+          "Developed a robust API with sending routes and CRUD to integrate the email service.",
+          "Created endpoints to validate and configure exclusive domains per user.",
+          "Configured and hosted the web server using Apache following security best practices."
+        ]
+      },
+      "project_two": {
+        "title": "Ozon Solution",
+        "role": "Backend Developer",
+        "date": "March 2024",
+        "responsabilities": [
+          "Integrated WooCommerce with Kommo CRM via API for data synchronization.",
+          "Set up a CI/CD pipeline to automate testing and deployment, streamlining development flow.",
+          "Created a system that dynamically generates leads in the CRM based on WooCommerce sales.",
+          "Improved system performance by 38% using object-oriented principles.",
+          "Implemented data sending via Webhook to ensure operation traceability."
+        ]
+      },
+      "project_three": {
+        "title": "ERP Bling Automation",
+        "role": "Fullstack Developer",
+        "date": "September to October 2024",
+        "responsabilities": [
+          "Developed an API to communicate with Bling (ERP), facilitating order and stock management.",
+          "Hosted services on AWS (Lambda, EC3, and Amazon EventBridge), optimizing costs and scalability.",
+          "Automated OAuth 2.0 token renewal, ensuring continuous service.",
+          "Created request routines and listeners via Webhook to sync stock in real time.",
+          "Integrated the system with Amazon SQS to manage asynchronous request delivery."
+        ]
+      },
+      "project_four": {
+        "title": "Aideia",
+        "role": "Backend Developer",
+        "date": "August 2024",
+        "responsabilities": [
+          "Integrated WordPress form with ClickUP, unifying lead data collection.",
+          "Created leads through the ClickUP API, automating information intake flow.",
+          "Updated CI/CD pipeline to ensure versioning and continuous deployment.",
+          "Developed a custom form to collect and send data to ClickUP.",
+          "Set up a test environment for future maintenance, ensuring quality and stability."
+        ]
+      },
+      "project_five": {
+        "title": "JumpVerso",
+        "role": "Fullstack Developer",
+        "date": "June to July 2024",
+        "responsabilites": [
+          "Created a web interface to display registered user data, facilitating profile management.",
+          "Developed a server to manage authentication, ensuring user security.",
+          "Integrated Evolution API (WhatsApp) with the web platform for automated communication.",
+          "Implemented QR Code generation for simplified WhatsApp authentication.",
+          "Created a group selection system for automatic sending via Webhook, expanding campaign reach."
+        ]
+      }
+    },
+    "contact": {
+      "title": "Send a message!",
+      "sub_title": "Connect. Talk to me!",
+      "terms": "All rights reserved"
+    }
+  }
+  

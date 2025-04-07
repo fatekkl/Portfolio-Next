@@ -1,0 +1,102 @@
+{
+    "menu": {
+      "home": "Início",
+      "projects": "Projetos",
+      "resume": "Currículo",
+      "sayHello": "Diga Olá"
+    },
+    "mobileHeader": {},
+    "main": {
+      "title": "Olá, sou o Matheus 👋",
+      "role": "Desenvolvedor Fullstack",
+      "description": "Sou um desenvolvedor curioso e apaixonado por tecnologia, conheça mais sobre minhas habilidades e projetos aqui.",
+      "solveTitle": "Solucione seus problemas com software.",
+      "solveDescription": {
+        "scalability": "Desenvolto com escalabilidade e performance.",
+        "projects": "Trabalhei em projetos por todo o Brasil."
+      }
+    },
+    "journey": {
+      "article_one": {
+        "article_title": "Com o que trabalho?",
+        "article_description": "Ao longo dos anos já interagi e trabalhei com diversas tecnologias do mercado, como JavaScript, Kotlin, PHP, Java, Python, .Net, entre outros. Como resultado, tive a oportunidade de trabalhar em diversos projetos pelo Brasil inteiro."
+      },
+      "article_two": {
+        "article_title": "O que fiz nesses projetos?",
+        "article_description": "Já trabalhei nos mais diversos tipos de projetos, como integrações, configuração e hospedagem de servidores, automações de estoque, entre outros. Com isso, adquiri experiência para me adaptar a diversas situações e trabalhar de diferentes formas e tecnologias."
+      },
+      "article_three": {
+        "article_title": "O que busco agora?",
+        "article_description": "Atualmente, estou em busca da minha primeira oportunidade de emprego em tempo integral e me preparo para ingressar no ensino superior. Paralelamente, sigo aprimorando meus conhecimentos em software escalável, estrutura de dados e UI/UX."
+      }
+    },
+    "projects": {
+      "title": "Projetos em que atuei",
+      "project_one": {
+        "title": "Resend",
+        "role": "Desenvolvedor Fullstack",
+        "date": "Junho de 2024",
+        "responsabilities": [
+          "Realizei a configuração completa de um servidor Linux (Ubuntu), garantindo segurança e estabilidade para o envio de e-mails.",
+          "Implementei uma rotina automatizada (cron) para disparos de e-mails em datas e horários selecionados.",
+          "Desenvolvi uma API robusta com rotas de envio e CRUD para integrar o serviço de e-mails.",
+          "Criei endpoints para validar e configurar domínios exclusivos por usuário.",
+          "Configurei e hospedei o servidor web utilizando Apache, seguindo boas práticas de segurança."
+        ]
+      },
+      "project_two": {
+        "title": "Ozon Solution",
+        "role": "Desenvolvedor Backend",
+        "date": "Março de 2024",
+        "responsabilities": [
+          "Implementei a integração entre WooCommerce e Kommo CRM via API para sincronização de dados.",
+          "Configurei um pipeline (CI/CD) para automatizar testes e deploy, otimizando o fluxo de desenvolvimento.",
+          "Criei um sistema que gera leads dinamicamente no CRM, de acordo com as vendas realizadas no WooCommerce.",
+          "Aprimorei a performance do sistema em 38%, aplicando boas práticas e padrões de Orientação a Objetos.",
+          "Implementei o envio de dados para o pipeline via Webhook, garantindo rastreabilidade das operações."
+        ]
+      },
+      "project_three": {
+        "title": "Automação ERP Bling",
+        "role": "Desenvolvedor Fullstack",
+        "date": "Setembro a Outubro de 2024",
+        "responsabilities": [
+          "Desenvolvi uma API para se comunicar com o Bling (ERP), facilitando o gerenciamento de pedidos e estoque.",
+          "Hospedei serviços na AWS (Lambda, EC3 e Amazon EventBridge), otimizando custos e escalabilidade.",
+          "Automatizei o processo de renovação de token OAuth 2.0, garantindo a continuidade do serviço.",
+          "Criei rotinas de requisição e listeners via Webhook para sincronizar estoque em tempo real.",
+          "Integrei o sistema com Amazon SQS para gerenciar e enviar requisições de forma assíncrona."
+        ]
+      },
+      "project_four": {
+        "title": "Aideia",
+        "role": "Desenvolvedor Backend",
+        "date": "Agosto de 2024",
+        "responsabilities": [
+          "Integrei o formulário WordPress com o ClickUP, unificando os dados de captação de leads.",
+          "Criei leads por meio da API do ClickUP, automatizando o fluxo de entrada de informações.",
+          "Atualizei o pipeline (CI/CD) para garantir versionamento e deploy contínuos.",
+          "Desenvolvi um formulário personalizado que coleta dados e envia ao ClickUP.",
+          "Configurei um ambiente de testes para manutenção futura, garantindo qualidade e estabilidade."
+        ]
+      },
+      "project_five": {
+        "title": "JumpVerso",
+        "role": "Desenvolvedor Fullstack",
+        "date": "Junho a Julho de 2024",
+        "responsabilites": [
+          "Criei uma interface web para exibir dados de usuários cadastrados, facilitando a gestão de perfis.",
+          "Desenvolvi um servidor para gerenciar autenticação, garantindo segurança dos usuários.",
+          "Integrei a Evolution API (WhatsApp) com a plataforma web, habilitando comunicação automatizada.",
+          "Implementei geração de QR Code para autenticação simplificada do WhatsApp do usuário.",
+          "Criei um sistema de seleção de grupos para envio automático via Webhook, ampliando o alcance das campanhas."
+        ]
+      }
+    },
+    "contact": {
+      "title": "Mande uma mensagem!",
+      "sub_title": "nove. Conecte. Fale comigo!",
+      "terms": "Todos os direitos reservados"
+    }
+  }
+  
