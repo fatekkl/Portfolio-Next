@@ -1,10 +1,14 @@
 "use client";
 
+import { useLanguage } from "@/contexts/LanguageContext";
 import { useEffect, useState } from "react";
 
 export default function Menu() {
     const [color, setColor] = useState("#343330");
     const [menuOpen, setMenuOpen] = useState(false)
+    const {t , toggleLanguage } = useLanguage()
+
+    const menuText = t.menu
 
     useEffect(() => {
         const handleScroll = () => {
@@ -58,16 +62,16 @@ export default function Menu() {
             <div className={`flex flex-col gap-4  fixed w-80 h-96 mr-6 -mt-2 rounded-2xl transition-all duration-500 ease-in-out transform origin-top-right ${menuOpen ? "scale-100 bg-gray-50" : "scale-0"}`}>
                 <div className="flex flex-col items-center gap-4 mt-20">
                     <a href="#principal">
-                        <p className={`text-jet font-bold text-[1.275rem] ${menuOpen ? "opacity-100 " : "opacity-0"}`}>Home</p>
+                        <p className={`text-jet font-bold text-[1.275rem] ${menuOpen ? "opacity-100 " : "opacity-0"}`}>{menuText.home}</p>
                     </a>
                     <a href="#project">
-                        <p className={`text-jet font-bold text-[1.275rem] ${menuOpen ? "opacity-100 " : "opacity-0"}`}>Projetos</p>
+                        <p className={`text-jet font-bold text-[1.275rem] ${menuOpen ? "opacity-100 " : "opacity-0"}`}>{menuText.projects}</p>
                     </a>
                     <a href="https://docs.google.com/document/d/e/2PACX-1vTAgMVAHS0URNcOIqnvonIBbXmcWu_D73v59e2ZAEberN5aZlXdUhdp_zb5KJ0i5boLirYeFTYEeDi0/pub" target="_blank" rel="noopener noreferrer">
-                        <p className={`text-jet font-bold text-[1.275rem] ${menuOpen ? "opacity-100 " : "opacity-0"}`}>Currículo</p>
+                        <p className={`text-jet font-bold text-[1.275rem] ${menuOpen ? "opacity-100 " : "opacity-0"}`}>{menuText.resume}</p>
                     </a>
                 </div>
-                <span className="text-jet opacity-60 font-extrabold text-xl text-center mt-10">Diga Olá</span>
+                <span className="text-jet opacity-60 font-extrabold text-xl text-center mt-10">{menuText.sayHello}</span>
                 <div className="w-full flex justify-center gap-4">
                     <a href="https://www.linkedin.com/in/matheusolvcosta/" target="_blank" rel="noopener noreferrer">
                         <img className="w-10" src="../../../assets/linkedin.png" />

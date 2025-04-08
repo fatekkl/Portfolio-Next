@@ -1,16 +1,22 @@
 "use client";
 
+import { useLanguage } from "@/contexts/LanguageContext";
 import ContactButton from "../ContactButton";
 
 export default function Contact() {
+  const { t, toggleLanguage } = useLanguage()
+
+  const contactText = t.contact
+
+
   return (
     <section className="h-50vh w-auto bg-jordy flex flex-col items-center max-md:gap-2 gap-6">
       <header className="max-md:text-2xl text-3xl flex flex-col gap-2">
         <h1 className="font-bold text-jet text-center">
-          Mande uma mensagem!
+          {contactText.title}
         </h1>
         <h2 className="font-bold text-jet text-center">
-          Inove. Conecte. Fale comigo!
+          {contactText.sub_title}
         </h2>
       </header>
 
@@ -41,7 +47,7 @@ export default function Contact() {
       </div>
 
       <footer className="flex flex-col justify-end text-center text-jet md:text-xl font-semibold max-sm:text-sm">
-        <span>Todos os direitos reservados.</span>
+        <span>{contactText.terms}</span>
         <span>2025 © Designed & Built by Matheus Oliveira</span>
       </footer>
     </section>

@@ -1,6 +1,11 @@
+import { useLanguage } from "@/contexts/LanguageContext";
 import Stair from "../Stair";
 
 export default function Journey() {
+    const { t, toggleLanguage } = useLanguage()
+
+    const journeyText = t.journey
+
     return (
         <>
             <aside className="fixed bottom-0 left-0 mb-4 ml-4 md:ml-12 z-40 -rotate-90 max-lg:hidden">
@@ -9,24 +14,24 @@ export default function Journey() {
 
 
             <main className="flex flex-col md:flex-row justify-around min-h-screen relative bg-jet p-8">
-                
+
                 <article className="md:ml-12 mt-16 max-sm:w-full md:w-1/2 flex flex-col gap-8 tracking-[0.094rem]">
                     <section className="flex flex-col gap-2 md:text-center lg:text-justify">
-                        <h2 className="text-tea max-sm:text-center text-3xl font-bold">Com o que trabalho?</h2>
+                        <h2 className="text-tea max-sm:text-center text-3xl font-bold">{journeyText.article_one.article_title}</h2>
                         <p className="font-normal text-white max-sm:text-center  max-sm:text-xl md:text-2xl h-auto">
-                            Ao longo dos anos já interagi e trabalhei com diversas tecnologias do mercado, como JavaScript, Kotlin, PHP, Java, Python, .Net, entre outros. Como resultado, tive a oportunidade de trabalhar em diversos projetos pelo Brasil inteiro.
+                            {journeyText.article_one.article_description}
                         </p>
                     </section>
                     <section className="flex flex-col gap-2 md:text-center lg:text-justify">
-                        <h2 className="text-tea max-sm:text-center text-3xl font-bold">O que fiz nesses projetos?</h2>
+                        <h2 className="text-tea max-sm:text-center text-3xl font-bold">{journeyText.article_two.article_title}</h2>
                         <p className="font-normal text-white max-sm:text-center  max-sm:text-xl md:text-2xl max-w-full h-auto">
-                            Já trabalhei nos mais diversos tipos de projetos, como integrações, configuração e hospedagem de servidores, automações de estoque, entre outros. Com isso, adquiri experiência para me adaptar a diversas situações e trabalhar de diferentes formas e tecnologias.
+                            {journeyText.article_two.article_description}
                         </p>
                     </section>
                     <section className="flex flex-col gap-2 md:text-center lg:text-justify">
-                        <h2 className="text-tea max-sm:text-center  text-3xl font-bold">O que busco agora?</h2>
+                        <h2 className="text-tea max-sm:text-center  text-3xl font-bold">{journeyText.article_three.article_title}</h2>
                         <p className="font-normal text-white max-sm:text-center  max-sm:text-xl md:text-2xl max-w-70 h-auto">
-                            Atualmente, estou em busca da minha primeira oportunidade de emprego em tempo integral e me preparo para ingressar no ensino superior. Paralelamente, sigo aprimorando meus conhecimentos em software escalável, estrutura de dados e UI/UX.
+                            {journeyText.article_three.article_description}
                         </p>
                     </section>
                 </article>

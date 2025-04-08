@@ -5,10 +5,17 @@ import Line2 from "../Line2";
 import ProjectDescription from "../ProjectDescription";
 import UniqueProject from "../UniqueProject";
 import MobileProject from "../MobileProject";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Projects() {
   const [projectsSelection, setProjectsSelection] = useState([true, false, false, false, false]);
   const [isMobile, setIsMobile] = useState(false)
+
+  const { t, toggleLanguage } = useLanguage()
+
+  const projectsText = t.projects
+
+
 
   const selectProject = (x: number) => {
     setProjectsSelection((prev) => {
@@ -44,70 +51,72 @@ export default function Projects() {
     };
 
     switch (x) {
+      
+
       case 0:
-        description.title = "Resend";
-        description.function = "Desenvolvedor Fullstack";
-        description.date = "Junho de 2024";
-        description.task_one = "Realizei a configuração completa de um servidor Linux (Ubuntu), garantindo segurança e estabilidade para o envio de e-mails.";
-        description.task_two = "Implementei uma rotina automatizada (cron) para disparos de e-mails em datas e horários selecionados.";
-        description.task_three = "Desenvolvi uma API robusta com rotas de envio e CRUD para integrar o serviço de e-mails.";
-        description.task_four = "Criei endpoints para validar e configurar domínios exclusivos por usuário.";
-        description.task_five = "Configurei e hospedei o servidor web utilizando Apache, seguindo boas práticas de segurança.";
+        description.title = projectsText.project_one.title;
+        description.function = projectsText.project_one.role;
+        description.date = projectsText.project_one.date;
+        description.task_one = projectsText.project_one.responsabilities[0];
+        description.task_two = projectsText.project_one.responsabilities[1];
+        description.task_three = projectsText.project_one.responsabilities[2];
+        description.task_four = projectsText.project_one.responsabilities[3];
+        description.task_five = projectsText.project_one.responsabilities[4];
         description.techs.push("../assets/php_tech.png", "../assets/linux_tech.png", "../assets/cloud_tech.png", "../assets/api_tech.png");
         break;
 
       case 1:
-        description.title = "Ozon Solution";
-        description.function = "Desenvolvedor Backend";
-        description.date = "Março de 2024";
-        description.task_one = "Implementei a integração entre WooCommerce e Kommo CRM via API para sincronização de dados.";
-        description.task_two = "Configurei um pipeline (CI/CD) para automatizar testes e deploy, otimizando o fluxo de desenvolvimento.";
-        description.task_three = "Criei leads dinamicamente no CRM, de acordo com as vendas realizadas no WooCommerce.";
-        description.task_four = "Aprimorei a performance do sistema, aplicando boas práticas e padrões de Orientação a Objetos.";
-        description.task_five = "Implementei o envio de dados para o pipeline via Webhook, garantindo rastreabilidade das operações.";
+        description.title = projectsText.project_two.title;
+        description.function = projectsText.project_two.role;
+        description.date = projectsText.project_two.date;
+        description.task_one = projectsText.project_two.responsabilities[0];
+        description.task_two = projectsText.project_two.responsabilities[1];
+        description.task_three = projectsText.project_two.responsabilities[2];
+        description.task_four = projectsText.project_two.responsabilities[3];
+        description.task_five = projectsText.project_two.responsabilities[4];
         description.techs.push("../assets/js_tech.png", "../assets/webhook_tech.png", "../assets/woo_tech.png", "../assets/api_tech.png");
         break;
 
       case 2:
-        description.title = "Bling";
-        description.function = "Desenvolvedor Fullstack";
-        description.date = "Setembro a Outubro de 2024";
-        description.task_one = "Desenvolvi uma API para se comunicar com o Bling (ERP), facilitando o gerenciamento de pedidos e estoque.";
-        description.task_two = "Hospedei serviços na AWS (Lambda, EC3 e Amazon EventBridge), otimizando custos e escalabilidade.";
-        description.task_three = "Automatizei o processo de renovação de token OAuth 2.0, garantindo a continuidade do serviço.";
-        description.task_four = "Criei rotinas de requisição e listeners via Webhook para sincronizar estoque em tempo real.";
-        description.task_five = "Integrei o sistema com Amazon SQS para gerenciar e enviar requisições de forma assíncrona.";
+        description.title = projectsText.project_three.title;
+        description.function = projectsText.project_three.role;
+        description.date = projectsText.project_three.date;
+        description.task_one = projectsText.project_three.responsabilities[0];
+        description.task_two = projectsText.project_three.responsabilities[1];
+        description.task_three = projectsText.project_three.responsabilities[2];
+        description.task_four = projectsText.project_three.responsabilities[3];
+        description.task_five = projectsText.project_three.responsabilities[4];
         description.techs.push("../assets/aws_tech.png", "../assets/js_tech.png", "../assets/erp_tech.png", "../assets/api_tech.png");
         break;
 
       case 3:
-        description.title = "Aideia";
-        description.function = "Desenvolvedor Backend";
-        description.date = "Agosto de 2024";
-        description.task_one = "Integrei o formulário WordPress com o ClickUP, unificando os dados de captação de leads.";
-        description.task_two = "Criei leads por meio da API do ClickUP, automatizando o fluxo de entrada de informações.";
-        description.task_three = "Atualizei o pipeline (CI/CD) para garantir versionamento e deploy contínuos.";
-        description.task_four = "Desenvolvi um formulário personalizado para coleta de dados e envio ao ClickUP.";
-        description.task_five = "Configurei um ambiente de testes para manutenção futura, garantindo qualidade e estabilidade.";
+        description.title = projectsText.project_four.title;
+        description.function =  projectsText.project_four.role;
+        description.date =  projectsText.project_four.date;
+        description.task_one =  projectsText.project_four.responsabilities[0];
+        description.task_two = projectsText.project_four.responsabilities[1];
+        description.task_three = projectsText.project_four.responsabilities[2];
+        description.task_four = projectsText.project_four.responsabilities[3];
+        description.task_five = projectsText.project_four.responsabilities[4];
         description.techs.push("../assets/wordpress_tech.png", "../assets/js_tech.png", "../assets/clickup_tech.png", "../assets/api_tech.png");
         break;
 
       case 4:
-        description.title = "JumpVerso";
-        description.function = "Desenvolvedor Fullstack";
-        description.date = "Junho a Julho de 2024";
-        description.task_one = "Criei uma interface web para exibir dados de usuários cadastrados, facilitando a gestão de perfis.";
-        description.task_two = "Desenvolvi um servidor para gerenciar autenticação, garantindo segurança dos usuários.";
-        description.task_three = "Integrei a Evolution API (WhatsApp) com a plataforma web, habilitando comunicação automatizada.";
-        description.task_four = "Implementei geração de QR Code para autenticação simplificada do WhatsApp do usuário.";
-        description.task_five = "Criei um sistema de seleção de grupos para envio automático via Webhook, ampliando o alcance das campanhas.";
+        description.title = projectsText.project_five.title;
+        description.function = projectsText.project_five.role;
+        description.date = projectsText.project_five.date;
+        description.task_one = projectsText.project_five.responsabilites[0];
+        description.task_two = projectsText.project_five.responsabilites[1];
+        description.task_three = projectsText.project_five.responsabilites[2];
+        description.task_four = projectsText.project_five.responsabilites[3];
+        description.task_five = projectsText.project_five.responsabilites[4];
         description.techs.push("../assets/express_tech.png", "../assets/js_tech.png", "../assets/webhook_tech.png", "../assets/api_tech.png");
         break;
 
       default:
-        description.title = "Não Encontrado";
-        description.function = "Não Encontrado";
-        description.date = "Não Encontrado";
+        description.title = "Not Found";
+        description.function = "Not Found";
+        description.date = "Not Found";
         break;
     }
 
@@ -137,7 +146,7 @@ export default function Projects() {
       >
         <div className="w-[50rem] h-[55rem] max-lg:p-20 lg:p-0 flex flex-col items-center gap-6 mt-20">
           <header className="w-full flex items-center justify-center gap-8">
-            <h1 className="text-3xl max-sm:text-2xl font-bold text-jordy">Projetos em que atuei</h1>
+            <h1 className="text-3xl max-sm:text-2xl font-bold text-jordy">{projectsText.title}</h1>
             <Line2 />
           </header>
 

@@ -5,9 +5,12 @@ import Stair from "../Stair";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Principal() {
-
+  const {t, toggleLanguage} = useLanguage()
+  
+  const mainText = t.main
 
   return (
     <main id="principal" className="flex relative">
@@ -19,16 +22,13 @@ export default function Principal() {
 
         <article className="w-full h-3/4 flex flex-col justify-end gap-6 sm:justify-center sm:items-center md:items-start md:justify-end max-sm:items-center text-center max-sm:justify-center">
           <h1 className="font-bold text-white ml-12 text-xl lg:text-4xl leading-normal max-sm:text-center md:text-start">
-            Olá,
-            <br />
-            Sou o Matheus 👋
+            {mainText.title}
           </h1>
           <h2 className="font-bold ml-12 text-2xl text-jordy max-sm:text-center">
-            Desenvolvedor Fullstack
+            {mainText.role}
           </h2>
           <p className="lg:w-2/4 ml-12 md:w-2/4 text-xl text-white text-justify sm:text-center md:text-start sm:w-6/12 max-sm:w-8/12 max-sm:text-center">
-            Sou um desenvolvedor curioso e apaixonado por tecnologia, conheça mais sobre minhas
-            habilidades e projetos aqui.
+            {mainText.description}
           </p>
           <nav className="ml-12 flex gap-5" aria-label="links sociais">
             <Link
@@ -76,11 +76,11 @@ export default function Principal() {
         </article>
         <div className="text-tea mt-4 font-bold max-sm:w-1/2 w-full h-fit flex flex-col items-center justify-center gap-4 max-sm:text-xs text-xl tracking-[0.094rem]">
           <span className="text-wrap text-center">
-            Solucione seus problemas com software.
+            {mainText.solveTitle}
           </span>
           <div className="flex justify-between text-xs font-normal text-wrap h-full max-sm:gap-4 gap-8 text-center mb-4">
-            <span>Desenvolto com escalabilidade e performance.</span>
-            <span>Trabalhei em projetos por todo o Brasil.</span>
+            <span>{mainText.solveDescription.projects}</span>
+            <span>{mainText.solveDescription.scalability}</span>
           </div>
         </div>
       </section>

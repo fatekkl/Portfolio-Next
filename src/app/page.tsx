@@ -9,24 +9,22 @@ import Menu from "./Components/Menu";
 import MobileHeader from "./Components/MobileHeader";
 import Principal from "./Components/Principal";
 import Projects from "./Components/Projects";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 
 export default function Home() {
-  const [languageSelected, setLanguageSelected] = useState("english")
-
-  useEffect(() => {
-  }, [languageSelected])
-
 
   return (
-    <div className="relative">
-      <Menu />
-      <MobileHeader />
-      <Principal />
-      <Journey />
-      <Projects />
-      <Contact />
-      <DotSquareGrid/>
-      <LanguageButton language={languageSelected} setFunction={setLanguageSelected}/>
-    </div>
+    <LanguageProvider>
+      <div className="relative">
+        <Menu />
+        <MobileHeader />
+        <Principal />
+        <Journey />
+        <Projects />
+        <Contact />
+        <DotSquareGrid />
+        <LanguageButton/>
+      </div>
+    </LanguageProvider>
   );
 }
