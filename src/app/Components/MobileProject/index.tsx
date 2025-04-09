@@ -1,7 +1,9 @@
 
 
-export default function MobileProject ({projectTitle = ""}) {
+export default function MobileProject({ projectTitle = "" }) {
     return (
-       <h1>{projectTitle}</h1>
+        <div className="">
+            <h1>In development...</h1>            
+        </div>
     )
 }

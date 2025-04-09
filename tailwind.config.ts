@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        blue: '0 4px 6px rgba(59, 130, 246, 0.5)', // blue-500
+      },
       keyframes: {
         breathing: {
           '0%, 100%': { transform: 'scale(1)' },
