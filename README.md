@@ -79,12 +79,12 @@ Para executar este projeto localmente, siga os passos abaixo:
 - [x] Fixar parte de projetos para dispositivos entre 640 e 768
 - [x] Tornar o portfólio completamente responsivo(MVP)
 - [x] Arrumar grid do background
+- [x] Adicionar versão em inglês
 
 ### 🔧 Em Progresso
 
 - [ ] Formatar objeto semanticamente
 - [ ] Pensar em uma forma bonita para a exibição dos projetos(Mobile)
-- [ ] Adicionar versão em inglês
 - [ ] Animação de transição para Projetos Acadêmicos e Trabalho
 - [ ] Adicionar header para substituir menu (Versão Mobile)
 - [ ] Lógica para abrir pop-up na seção de Projetos, quando selecionado
