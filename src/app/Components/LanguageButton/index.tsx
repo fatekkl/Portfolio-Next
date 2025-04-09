@@ -11,7 +11,7 @@ export default function LanguageButton() {
 
 
     return (
-        <aside onClick={toggleLanguage} className="fixed bottom-0 right-4 mb-4 ml-4 md:ml-12 z-40 max-lg:hidden cursor-pointer transition-all duration-150 hover:scale-110">
+        <aside onClick={toggleLanguage} className="fixed bottom-0 right-4 mb-4 ml-4 md:ml-12 z-40 max-lg:hidden cursor-pointer transition-all duration-150 animate-breathing">
             <img src={`../assets/${language}_symbol.png`} />
         </aside>
     )

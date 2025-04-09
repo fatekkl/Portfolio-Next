@@ -67,7 +67,7 @@ export default function Menu() {
                     <a href="#project">
                         <p className={`text-jet font-bold text-[1.275rem] ${menuOpen ? "opacity-100 " : "opacity-0"}`}>{menuText.projects}</p>
                     </a>
-                    <a href="https://docs.google.com/document/d/e/2PACX-1vTAgMVAHS0URNcOIqnvonIBbXmcWu_D73v59e2ZAEberN5aZlXdUhdp_zb5KJ0i5boLirYeFTYEeDi0/pub" target="_blank" rel="noopener noreferrer">
+                    <a href="https://docs.google.com/document/d/1b0Qk6hPSJ9gM01t26cB2U-KXBHw2JlQ4m8wNK-XbMo8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
                         <p className={`text-jet font-bold text-[1.275rem] ${menuOpen ? "opacity-100 " : "opacity-0"}`}>{menuText.resume}</p>
                     </a>
                 </div>

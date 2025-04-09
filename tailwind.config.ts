@@ -8,6 +8,15 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        breathing: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+        },
+      },
+      animation: {
+        breathing: 'breathing 2s ease-in-out infinite',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
