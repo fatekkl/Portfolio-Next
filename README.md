@@ -88,6 +88,7 @@ Para executar este projeto localmente, siga os passos abaixo:
 - [ ] Animação de transição para Projetos Acadêmicos e Trabalho
 - [ ] Adicionar header para substituir menu (Versão Mobile)
 - [ ] Lógica para abrir pop-up na seção de Projetos, quando selecionado
+- [ ] Alterar cores dos assets
 
 ## 📡 Deploy
 
