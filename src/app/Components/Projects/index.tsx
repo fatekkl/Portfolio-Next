@@ -132,12 +132,11 @@ export default function Projects() {
       {/* Conteúdo principal */}
       <section
         id="projects"
-        style={{ backgroundImage: "url('../assets/Background.png')" }}
         className="bg-jet lg:min-h-[100vh] min-h-[120vh] bg-no-repeat bg-bottom bg-contain flex justify-center relative"
       >
         <div className="w-[50rem] h-[55rem] max-lg:p-20 lg:p-0 flex flex-col items-center gap-6 mt-20">
           <header className="w-full flex items-center justify-center gap-8">
-            <h1 className="text-3xl max-sm:text-2xl font-bold text-jordy">Projetos em que atuei</h1>
+            <h1 className="text-3xl max-sm:text-2xl font-bold text-gold">Projetos em que atuei</h1>
             <Line2 />
           </header>
 
@@ -174,13 +173,13 @@ export default function Projects() {
             {/* Descrições do Projeto */}
             <section className="w-full h-full flex flex-col gap-4">
               <div className="flex flex-wrap items-center max-sm:justify-center max-sm:flex-col gap-4">
-                <h2 className="text-tea max-sm:text-center text-2xl font-bold">{selectDescription().function}</h2>
-                <img src="../assets/Line3.svg" alt="Line Divider" />
-                <span className="text-tea text-2xl font-bold">{selectDescription().title}</span>
+                <h2 className="text-green_secondary max-sm:text-center text-2xl font-bold">{selectDescription().function}</h2>
+                <img src="../assets/Line3.svg" alt="separator" />
+                <span className="text-green_secondary text-2xl font-bold">{selectDescription().title}</span>
               </div>
 
               <div className="flex justify-between align-baseline">
-                <p className="font-light text-jordy">{selectDescription().date}</p>
+                <strong className="text-silver">{selectDescription().date}</strong>
               </div>
 
               <div className="flex flex-col gap-6 h-full">

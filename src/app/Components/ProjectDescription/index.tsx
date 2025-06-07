@@ -13,7 +13,7 @@ export default function ProjectDescription({ description }: ProjectDescriptionPr
             </div>
 
             <div className="flex">
-                <p className="font-semibold  text-white">{description}</p>
+                <p className="font-semibold  text-silver">{description}</p>
             </div>
         </div>
 

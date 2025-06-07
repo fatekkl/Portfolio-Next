@@ -1,6 +1,4 @@
 import Contact from "./Components/Contact";
-import DotSquare from "./Components/DotSquare";
-import DotSquareGrid from "./Components/DotSquareGrid";
 import Journey from "./Components/Journey";
 import Menu from "./Components/Menu";
 import MobileHeader from "./Components/MobileHeader";
@@ -16,7 +14,6 @@ export default function Home() {
       <Journey />
       <Projects />
       <Contact />
-      <DotSquareGrid/>
     </div>
   );
 }

@@ -4,12 +4,12 @@ import ContactButton from "../ContactButton";
 
 export default function Contact() {
   return (
-    <section className="h-50vh w-auto bg-jordy flex flex-col items-center max-md:gap-2 gap-6">
+    <section className="h-50vh w-auto bg-jet flex flex-col items-center max-md:gap-2 gap-6">
       <header className="max-md:text-2xl text-3xl flex flex-col gap-2">
-        <h1 className="font-bold text-jet text-center">
+        <h1 className="font-bold text-silver text-center">
           Mande uma mensagem!
         </h1>
-        <h2 className="font-bold text-jet text-center">
+        <h2 className="font-bold text-silver text-center">
           Inove. Conecte. Fale comigo!
         </h2>
       </header>
@@ -19,7 +19,7 @@ export default function Contact() {
           href="mailto:matheus.olv.dev@gmail.com?body=Ol%C3%A1,%20vimos%20seu%20portf%C3%B3lio..."
           target="_blank"
           rel="noopener noreferrer"
-          className="max-md:scale-75 w-96 h-20 bg-tea rounded-2xl flex items-center text-jet font-bold text-xl justify-start transition-all duration-300 ease-in-out hover:cursor-pointer hover:scale-110 max-sm:scale-75 max-sm:hover:scale-90"
+          className="max-md:scale-75 w-96 h-20 rounded-2xl flex items-center text-silver font-bold text-xl justify-start transition-all duration-300 ease-in-out hover:cursor-pointer hover:scale-110 max-sm:scale-75 max-sm:hover:scale-90"
         >
           <ContactButton path="../../../assets/email.png" />
           <div className="w-full h-full flex items-center justify-center">
@@ -30,7 +30,7 @@ export default function Contact() {
           href="https://wa.me/5511987539647?text=Ol%C3%A1%20Matheus!"
           target="_blank"
           rel="noopener noreferrer"
-          className="max-md:scale-75 w-96 h-20 bg-tea rounded-2xl flex items-center text-jet font-bold text-xl transition-all duration-300 ease-in-out justify-start hover:cursor-pointer max-sm:hover:scale-90 hover:scale-110 max-sm:scale-75"
+          className="max-md:scale-75 w-96 h-20  rounded-2xl flex items-center text-silver font-bold text-xl transition-all duration-300 ease-in-out justify-start hover:cursor-pointer max-sm:hover:scale-90 hover:scale-110 max-sm:scale-75"
         >
           <ContactButton path="../../../assets/whatsapp.png" />
           <div className="w-full h-full flex items-center justify-center">
@@ -40,7 +40,7 @@ export default function Contact() {
         </a>
       </div>
 
-      <footer className="flex flex-col justify-end text-center text-jet md:text-xl font-semibold max-sm:text-sm">
+      <footer className="flex flex-col justify-end text-center text-silver md:text-xl font-semibold max-sm:text-sm">
         <span>Todos os direitos reservados.</span>
         <span>2025 © Designed & Built by Matheus Oliveira</span>
       </footer>
