@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Line2 from "../Line2";
+import Line2 from "../Separator";
 import ProjectDescription from "../ProjectDescription";
 import UniqueProject from "../UniqueProject";
 import MobileProject from "../MobileProject";
+import Separator from "../Separator";
 
 export default function Projects() {
   const [projectsSelection, setProjectsSelection] = useState([true, false, false, false, false]);
@@ -51,7 +52,7 @@ export default function Projects() {
         description.task_one = "Realizei a configuração completa de um servidor Linux (Ubuntu), garantindo segurança e estabilidade para o envio de e-mails.";
         description.task_two = "Implementei uma rotina automatizada (cron) para disparos de e-mails em datas e horários selecionados.";
         description.task_three = "Desenvolvi uma API robusta com rotas de envio e CRUD para integrar o serviço de e-mails.";
-        description.task_four = "Criei endpoints para validar e configurar domínios exclusivos por usuário.";
+        description.task_four = "           dasdsCriei endpoints para validar e configurar domínios exclusivos por usuário.";
         description.task_five = "Configurei e hospedei o servidor web utilizando Apache, seguindo boas práticas de segurança.";
         description.techs.push("../assets/php_tech.png", "../assets/linux_tech.png", "../assets/cloud_tech.png", "../assets/api_tech.png");
         break;
@@ -137,7 +138,7 @@ export default function Projects() {
         <div className="w-[50rem] h-[55rem] max-lg:p-20 lg:p-0 flex flex-col items-center gap-6 mt-20">
           <header className="w-full flex items-center justify-center gap-8">
             <h1 className="text-3xl max-sm:text-2xl font-bold text-gold">Projetos em que atuei</h1>
-            <Line2 />
+            <Separator/>
           </header>
 
           <div className={`justify-between gap-8 ${isMobile ? "max-md:hidden" : "flex"}`}>
@@ -173,7 +174,7 @@ export default function Projects() {
             {/* Descrições do Projeto */}
             <section className="w-full h-full flex flex-col gap-4">
               <div className="flex flex-wrap items-center max-sm:justify-center max-sm:flex-col gap-4">
-                <h2 className="text-green_secondary max-sm:text-center text-2xl font-bold">{selectDescription().function}</h2>
+                <h2 className="text-gold max-sm:text-center text-2xl font-bold">{selectDescription().function}</h2>
                 <img src="../assets/Line3.svg" alt="separator" />
                 <span className="text-green_secondary text-2xl font-bold">{selectDescription().title}</span>
               </div>

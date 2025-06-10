@@ -13,7 +13,7 @@ export default function Menu() {
             if (scrollPosition < 840) {
                 setColor("#343330");
             } else {
-                setColor("#9AC4F8");
+                setColor("#EBEDC5");
             }
         };
 
