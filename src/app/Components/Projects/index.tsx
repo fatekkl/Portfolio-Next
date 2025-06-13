@@ -2,10 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Line2 from "../Separator";
-import ProjectDescription from "../ProjectDescription";
-import UniqueProject from "../UniqueProject";
-import MobileProject from "../MobileProject";
 import Separator from "../Separator";
+import ProjectInfo from "../ProjectInfo";
+import ProjectNavigation from "../ProjectNavigation";
 
 export default function Projects() {
   const [projectsSelection, setProjectsSelection] = useState([true, false, false, false, false]);
@@ -129,90 +128,16 @@ export default function Projects() {
   }, [])
 
   return (
-    <>
-      {/* Conteúdo principal */}
-      <section
-        id="projects"
-        className="bg-jet lg:min-h-[100vh] min-h-[120vh] bg-no-repeat bg-bottom bg-contain flex justify-center relative"
-      >
-        <div className="w-[50rem] h-[55rem] max-lg:p-20 lg:p-0 flex flex-col items-center gap-6 mt-20">
-          <header className="w-full flex items-center justify-center gap-8">
-            <h1 className="text-3xl max-sm:text-2xl font-bold text-gold">Projetos em que atuei</h1>
-            <Separator/>
-          </header>
-
-          <div className={`justify-between gap-8 ${isMobile ? "max-md:hidden" : "flex"}`}>
-            {/* Lista de Projetos */}
-            <aside className="h-full md:w-60 max-sm:w-40 overflow-auto flex flex-col">
-              <UniqueProject
-                onClick={() => selectProject(0)}
-                projectTitle="Resend"
-                selected={projectsSelection[0]}
-              />
-              <UniqueProject
-                onClick={() => selectProject(1)}
-                projectTitle="Ozon Solution"
-                selected={projectsSelection[1]}
-              />
-              <UniqueProject
-                onClick={() => selectProject(2)}
-                projectTitle="Bling"
-                selected={projectsSelection[2]}
-              />
-              <UniqueProject
-                onClick={() => selectProject(3)}
-                projectTitle="Aideia"
-                selected={projectsSelection[3]}
-              />
-              <UniqueProject
-                onClick={() => selectProject(4)}
-                projectTitle="JumpVerso"
-                selected={projectsSelection[4]}
-              />
-            </aside>
-
-            {/* Descrições do Projeto */}
-            <section className="w-full h-full flex flex-col gap-4">
-              <div className="flex flex-wrap items-center max-sm:justify-center max-sm:flex-col gap-4">
-                <h2 className="text-gold max-sm:text-center text-2xl font-bold">{selectDescription().function}</h2>
-                <img src="../assets/Line3.svg" alt="separator" />
-                <span className="text-green_secondary text-2xl font-bold">{selectDescription().title}</span>
-              </div>
-
-              <div className="flex justify-between align-baseline">
-                <strong className="text-silver">{selectDescription().date}</strong>
-              </div>
-
-              <div className="flex flex-col gap-6 h-full">
-                <ProjectDescription description={selectDescription().task_one} />
-                <ProjectDescription description={selectDescription().task_two} />
-                <ProjectDescription description={selectDescription().task_three} />
-                <ProjectDescription description={selectDescription().task_four} />
-                <ProjectDescription description={selectDescription().task_five} />
-              </div>
-
-              {/* Ícones de tecnologias */}
-              <div className="flex gap-4">
-                {selectDescription().techs.slice(1).map((tech, index) => (
-                  <img key={index} src={tech} alt={`Tech ${index + 1}`} />
-                ))}
-              </div>
-            </section>
-          </div>
-
-          <div className={`${isMobile ? "flex flex-col items-center justify-around w-full h-full" : "hidden"} `}>
-                <MobileProject projectTitle="Resend"/>
-                <MobileProject projectTitle="Ozon Solution"/>
-                <MobileProject projectTitle="Bling"/>
-                <MobileProject projectTitle="Aideia"/>
-                <MobileProject projectTitle="JumpVerso"/>
-
-          </div>
-
+    <main className="mx-auto px-6 py-20 md:py-24 bg-jet">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-4xl font-bold mb-2 text-gray-100">Projetos em que atuei</h1>
+        <div className="w-24 h-1 bg-green_secondary mb-12" />
+        <div className="flex flex-col md:flex-row gap-8">
+          <ProjectNavigation />
+          <ProjectInfo />
         </div>
-
-      </section>
-    </>
+      </div>
+    </main>
 
   );
 }
