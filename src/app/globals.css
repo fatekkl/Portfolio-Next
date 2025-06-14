@@ -21,3 +21,8 @@ body {
 }
 
 
+.active-link {
+  @apply bg-[#65665A] text-gray-300 border-green_secondary font-semibold
+}
+
+
