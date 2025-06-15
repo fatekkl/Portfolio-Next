@@ -5,10 +5,9 @@ import ProjectInfo from "../ProjectInfo";
 import ProjectNavigation from "../ProjectNavigation";
 
 export default function Projects() {
-  const [activeProject, setActiveProject] = useState<number>(1);
+  const [activeProject, setActiveProject] = useState<number>(0);
 
 
-  console.log(activeProject)
   return (
     <main className="mx-auto px-6 py-20 md:py-24 bg-jet">
       <div className="max-w-4xl mx-auto">

@@ -1,4 +1,6 @@
 import { Dispatch, SetStateAction } from "react";
+import projects from '../../../../public/projects.json';
+
 
 interface Props {
     activeProject: number;
@@ -19,11 +21,11 @@ export default function ProjectNavigation({ activeProject, setActiveProject }: P
 
     return (
         <nav className="md:w-1/4 space-y-2">
-            <a id="1" onClick={handleActiveProject} className={getClassName(1)}>Ozon Solution</a>
-            <a id="2" onClick={handleActiveProject} className={getClassName(2)}>Resend</a>
-            <a id="3" onClick={handleActiveProject} className={getClassName(3)}>Bling</a>
-            <a id="4" onClick={handleActiveProject} className={getClassName(4)}>Aldeia</a>
-            <a id="5" onClick={handleActiveProject} className={getClassName(5)}>JumpVerso</a>
+
+            {projects.map((project, index) => {
+                return <a id={index.toString()} key={index.toString()} onClick={handleActiveProject} className={getClassName(index)}>{project.company}</a>
+
+            })}
         </nav>
     );
 }
