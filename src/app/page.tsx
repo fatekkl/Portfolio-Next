@@ -1,4 +1,5 @@
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 import Journey from "./Components/Journey";
 import Menu from "./Components/Menu";
 import MobileHeader from "./Components/MobileHeader";
@@ -14,6 +15,7 @@ export default function Home() {
       <Journey />
       <Projects />
       <Contact />
+      <Footer/>
     </div>
   );
 }
