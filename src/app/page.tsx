@@ -1,16 +1,12 @@
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Journey from "./Components/Journey";
-import Menu from "./Components/Menu";
-import MobileHeader from "./Components/MobileHeader";
 import Principal from "./Components/Principal";
 import Projects from "./Components/Projects";
 
 export default function Home() {
   return (
     <div className="relative">
-      <Menu />
-      <MobileHeader />
       <Principal />
       <Journey />
       <Projects />

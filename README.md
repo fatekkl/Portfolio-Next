@@ -88,6 +88,7 @@ Para executar este projeto localmente, siga os passos abaixo:
 - [ ] Adicionar versão em inglês
 - [ ] Animação de transição para Projetos Acadêmicos e Trabalho
 - [ ] Adicionar header para substituir menu (Versão Mobile)
+- [ ] Criar um menu novo
 
 ## 📡 Deploy
 
