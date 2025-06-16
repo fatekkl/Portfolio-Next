@@ -23,11 +23,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        jet: "#343330",
-        jordy: "#9AC4F8",
-        tea: "#C7FFDA",
-        violet: "#6A66A3",
-        khaki: "#C7AC92"
+        blue_primary:  "#347785",
+        green_secondary: "#99CFB3",
+        jet: "#2C2C2C",
+        gold:  "#EBEDC5",
+        vine: "#8C3E62",
+        silver: "#E8E6F0"
       },
       fontFamily: {
         poppins:  ['var(--font-poppins)', 'sans-serif'],

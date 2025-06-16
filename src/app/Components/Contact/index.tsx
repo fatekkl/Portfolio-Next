@@ -1,56 +1,28 @@
 "use client";
 
-import { useLanguage } from "@/contexts/LanguageContext";
-import ContactButton from "../ContactButton";
 
 export default function Contact() {
-  const { t, toggleLanguage } = useLanguage()
-
-  const contactText = t.contact
-
 
   return (
-    <section className="h-50vh w-auto bg-jordy flex flex-col items-center max-md:gap-2 gap-6">
-      <header className="max-md:text-2xl text-3xl flex flex-col gap-2">
-        <h1 className="font-bold text-jet text-center">
-          {contactText.title}
-        </h1>
-        <h2 className="font-bold text-jet text-center">
-          {contactText.sub_title}
-        </h2>
-      </header>
-
-      <div className="flex flex-col gap-4 w-full px-4 md:px-0 md:gap-4 lg:gap-8 items-center">
-        <a
-          href="mailto:matheus.olv.dev@gmail.com?body=Ol%C3%A1,%20vimos%20seu%20portf%C3%B3lio..."
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full max-w-md h-20 bg-tea rounded-2xl flex items-center text-jet font-bold text-base md:text-xl justify-start transition-all duration-300 ease-in-out hover:scale-105 hover:cursor-pointer"
-        >
-          <ContactButton path="../../../assets/email.png" />
-          <div className="w-full h-full flex items-center justify-center">
-            <span>matheus.olv.dev</span>
+    <section className="py-16 bg-gray-800 bg-opacity-70" id="contact">
+      <div className="container mx-auto px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-green_secondary mb-4">Entre em Contato</h2>
+          <p className="text-silver mb-8 text-lg">
+            Vamos conversar sobre seus projetos ou ideias. Estou sempre aberto a novas oportunidades e colaborações.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+            <a className="inline-flex gap-1 items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-green_secondary hover:bg-gold transition-colors w-full sm:w-auto" href="mailto:matheus.olv.dev@gmail.com">
+              <img src="../assets/email.svg" />
+              Enviar Email
+            </a>
+            <a className="inline-flex items-center justify-around gap-1 px-8 py-3 border border-green_secondary text-base font-medium rounded-md text-green_secondary hover:bg-gold hover:text-gray-900 transition-colors w-full sm:w-auto" href="https://wa.me/5511987539647" target="_blank">
+              <img src="../assets/whatsapp.svg" />
+              WhatsApp
+            </a>
           </div>
-        </a>
-
-        <a
-          href="https://wa.me/5511987539647?text=Ol%C3%A1%20Matheus!"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full max-w-md h-20 bg-tea rounded-2xl flex items-center text-jet font-bold text-base md:text-xl justify-start transition-all duration-300 ease-in-out hover:scale-105 hover:cursor-pointer"
-        >
-          <ContactButton path="../../../assets/whatsapp.png" />
-          <div className="w-full h-full flex items-center justify-center">
-            <span>+55 11 98753-9647</span>
-          </div>
-        </a>
+        </div>
       </div>
-
-
-      <footer className="flex flex-col justify-end text-center text-jet md:text-xl font-semibold max-sm:text-sm">
-        <span>{contactText.terms}</span>
-        <span>2025 © Designed & Built by Matheus Oliveira</span>
-      </footer>
     </section>
   );
 }
