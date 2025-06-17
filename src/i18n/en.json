@@ -1,0 +1,133 @@
+{
+  "principal": {
+    "main_text": {
+      "h1": "Hello,",
+      "h2": "I'm Matheus 👋",
+      "p1": "Fullstack Developer",
+      "p2": "I'm a curious developer passionate about technology. Learn more about my skills and projects here."
+    },
+    "sub_text": {
+      "h3": "Solve your problems with software.",
+      "p1": "I develop with scalability and performance in mind.",
+      "p2": "I've worked on projects all across Brazil."
+    }
+  },
+  "journey": {
+    "text_1": {
+      "title_1": "What do I work with?",
+      "p1": "Over the years, I’ve interacted and worked with several market technologies such as JavaScript, Kotlin, PHP, Java, Python, .Net, and more. As a result, I’ve had the opportunity to work on multiple projects throughout Brazil."
+    },
+    "text_2": {
+      "title_2": "What have I done in these projects?",
+      "p2": "I’ve worked on a wide range of projects, including integrations, server configuration and hosting, inventory automation, and more. This has given me the experience to adapt to different situations and work with various technologies."
+    },
+    "text_3": {
+      "title_3": "What am I looking for now?",
+      "p3": "I’m currently looking for my first full-time job opportunity and preparing to enter higher education. Meanwhile, I continue to enhance my knowledge in scalable software, data structures, and UI/UX."
+    }
+  },
+  "projects_section": {
+    "main_title": "Projects I've Worked On",
+    "projects": [
+      {
+        "company": "Resend",
+        "role": "Fullstack Developer",
+        "date": "June 2024",
+        "responsabilities": [
+          "Fully configured a Linux (Ubuntu) server, ensuring security and stability for email delivery.",
+          "Implemented an automated (cron) routine to send emails on selected dates and times.",
+          "Developed a robust API with sending routes and CRUD to integrate the email service.",
+          "Created endpoints to validate and configure user-specific domains.",
+          "Configured and hosted the web server using Apache, following security best practices."
+        ],
+        "techs": [
+          "../assets/php_tech.png",
+          "../assets/linux_tech.png",
+          "../assets/cloud_tech.png",
+          "../assets/api_tech.png"
+        ]
+      },
+      {
+        "company": "Ozon Solution",
+        "role": "Backend Developer",
+        "date": "March 2024",
+        "responsabilities": [
+          "Implemented integration between WooCommerce and Kommo CRM via API for data synchronization.",
+          "Configured a CI/CD pipeline to automate tests and deployment, optimizing the development workflow.",
+          "Created a system to dynamically generate leads in the CRM based on WooCommerce sales.",
+          "Improved system performance by 38% using object-oriented best practices and standards.",
+          "Implemented data sending to the pipeline via Webhook, ensuring operation traceability."
+        ],
+        "techs": [
+          "../assets/js_tech.png",
+          "../assets/webhook_tech.png",
+          "../assets/woo_tech.png",
+          "../assets/api_tech.png"
+        ]
+      },
+      {
+        "company": "ERP Bling Automation",
+        "role": "Fullstack Developer",
+        "date": "September to October 2024",
+        "responsabilities": [
+          "Developed an API to communicate with Bling (ERP), streamlining order and inventory management.",
+          "Hosted services on AWS (Lambda, EC3, and Amazon EventBridge), optimizing cost and scalability.",
+          "Automated the OAuth 2.0 token renewal process, ensuring continuous service operation.",
+          "Created request routines and Webhook listeners for real-time inventory synchronization.",
+          "Integrated the system with Amazon SQS to manage and send asynchronous requests."
+        ],
+        "techs": [
+          "../assets/aws_tech.png",
+          "../assets/js_tech.png",
+          "../assets/erp_tech.png",
+          "../assets/api_tech.png"
+        ]
+      },
+      {
+        "company": "Aideia",
+        "role": "Backend Developer",
+        "date": "August 2024",
+        "responsabilities": [
+          "Integrated a WordPress form with ClickUP, consolidating lead data collection.",
+          "Created leads through the ClickUP API, automating the information intake process.",
+          "Updated the CI/CD pipeline to ensure versioning and continuous deployment.",
+          "Developed a custom form to collect data and send it to ClickUP.",
+          "Configured a testing environment for future maintenance, ensuring quality and stability."
+        ],
+        "techs": [
+          "../assets/wordpress_tech.png",
+          "../assets/js_tech.png",
+          "../assets/clickup_tech.png",
+          "../assets/api_tech.png"
+        ]
+      },
+      {
+        "company": "JumpVerso",
+        "role": "Fullstack Developer",
+        "date": "June to July 2024",
+        "responsabilities": [
+          "Created a web interface to display registered user data, simplifying profile management.",
+          "Developed a server to handle authentication, ensuring user security.",
+          "Integrated the Evolution API (WhatsApp) with the web platform, enabling automated communication.",
+          "Implemented QR Code generation for simplified WhatsApp authentication.",
+          "Created a group selection system for automatic sending via Webhook, expanding campaign reach."
+        ],
+        "techs": [
+          "../assets/express_tech.png",
+          "../assets/js_tech.png",
+          "../assets/webhook_tech.png",
+          "../assets/api_tech.png"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "main_title": "Get in Touch",
+    "main_text": "Let's talk about your projects or ideas. I'm always open to new opportunities and collaborations.",
+    "mail_button": "Send Email",
+    "whatsapp_button": "WhatsApp"
+  },
+  "footer": {
+    "main_text": "© 2025 Matheus de Oliveira. All rights reserved."
+  }
+}

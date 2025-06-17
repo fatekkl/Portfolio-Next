@@ -1,5 +1,6 @@
 "use client"
 
+import { LanguageProvider } from "@/contexts/LanguageContext";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Journey from "./Components/Journey";
@@ -10,11 +11,13 @@ export default function Home() {
 
   return (
     <div className="relative">
-      <Principal />
-      <Journey />
-      <Projects />
-      <Contact />
-      <Footer/>
+      <LanguageProvider>
+        <Principal />
+        <Journey />
+        <Projects />
+        <Contact />
+        <Footer />
+      </LanguageProvider>
     </div>
   );
 }

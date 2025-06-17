@@ -1,11 +1,15 @@
+import { useLanguage } from "@/contexts/LanguageContext";
 import ProjectTask from "../ProjectTask";
-import projects from '../../../../public/projects.json';
 
 interface Props {
   activeProject: number;
 }
 
 export default function ProjectInfo({ activeProject }: Props) {
+  const { t } = useLanguage();
+
+
+  const projects = t.projects_section.projects
   const selectedProject = projects[activeProject];
 
   return (

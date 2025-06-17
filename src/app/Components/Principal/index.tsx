@@ -1,20 +1,26 @@
 "use client";
 
+import { useLanguage } from "@/contexts/LanguageContext";
 import React from "react";
 
 export default function Principal() {
+  const { t } = useLanguage();
+
+  const principal_content = t.principal
+
+
   return (
     <main id="principal" className="flex flex-col md:flex-row relative">
       {/* Seção de apresentação */}
       <section className="w-full md:w-1/2 h-auto md:h-screen bg-jet flex flex-col">
         <div className="flex flex-col justify-center p-8 mt-10 relative">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">Olá,</h1>
-          <h2 className="text-4xl text-silver md:text-5xl font-bold mb-4">Sou o Matheus 👋</h2>
+          <h1 className="text-4xl md:text-5xl font-bold mb-2">{principal_content.main_text.h1}</h1>
+          <h2 className="text-4xl text-silver md:text-5xl font-bold mb-4">{principal_content.main_text.h2}</h2>
           <p className="text-green_secondary text-lg md:text-xl font-semibold mb-6">
-            Desenvolvedor Fullstack
+            {principal_content.main_text.p1}
           </p>
           <p className="text-silver mb-8 text-base md:text-lg leading-relaxed">
-            Sou um desenvolvedor curioso e apaixonado por tecnologia, conheça mais sobre minhas habilidades e projetos aqui.
+            {principal_content.main_text.p2}
           </p>
           <div className="flex space-x-4 mb-12">
             <a href="https://www.linkedin.com/in/matheusolvcosta/" target="_blank" rel="noopener noreferrer">
@@ -30,10 +36,10 @@ export default function Principal() {
         </div>
 
         <div className="mt-auto p-8 md:p-12">
-          <h3 className="text-xl font-semibold mb-3">Solucione seus problemas com software.</h3>
+          <h3 className="text-xl font-semibold mb-3">{principal_content.sub_text.h3}</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-silver">
-            <p>Desenvolvo com escalabilidade e performance.</p>
-            <p>Trabalhei em projetos por todo o Brasil.</p>
+            <p>{principal_content.sub_text.p1}</p>
+            <p>{principal_content.sub_text.p2}</p>
           </div>
         </div>
       </section>
