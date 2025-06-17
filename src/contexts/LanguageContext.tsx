@@ -1,11 +1,11 @@
 "use client";
 
 import { createContext, useContext, useState, ReactNode } from "react";
-import ptbr from "../i18n/ptbr.json";
+import pt from "../i18n/ptbr.json";
 import en from "../i18n/en.json";
 
-type Language = "ptbr" | "en";
-type Translation = typeof ptbr;
+type Language = "pt" | "en";
+type Translation = typeof pt;
 
 interface LanguageContextType {
   language: Language;
@@ -16,9 +16,9 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>("en");
+  const [language, setLanguage] = useState<Language>("pt");
 
-  const translations: Record<Language, Translation> = { ptbr,  en };
+  const translations: Record<Language, Translation> = { pt,  en };
   const t = translations[language];
 
   return (
